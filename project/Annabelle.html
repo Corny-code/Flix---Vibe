@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> Annabelle </title>
+    <!--fav icon-->
+    <link
+      href="../assets/img/shinnobu/logo2-removebg-preview.png"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+    />
+    <!--bootstrap css1 js1---->
+    <link
+      href="../assets/libs/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--fontawesome css1--->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--jquery css1 js1-->
+    <link
+      href="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.js"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--lightbox2 css1 js1---->
+    <link
+      href="../assets/libs/lightbox2-2.11.4/dist/css/lightbox.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--Custom css-->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      header {
+        height: 100vh;
+        background: linear-gradient(30deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+          url(../assets/img/tom/horror6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      header.active {
+        height: 100vh;
+        background: linear-gradient(30deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+          url(../assets/img/tom/horror6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .banners {
+        width: 80%;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+
+      .bannerheaders {
+        animation-name: bnanis;
+        animation-duration: 2s;
+
+        font-size: 65px;
+      }
+      .bannerheaders.active {
+        color: rgb(0, 63, 156);
+      }
+      .bannerheaders .display-3 {
+        font-size: 80px;
+        color: var(--secodary-color);
+      }
+      .bannerheaders .display-3.active {
+        font-size: 80px;
+        color: white;
+      }
+      .bannerparagraphs {
+        animation-name: bnanis;
+        animation-duration: 2s;
+        animation-delay: 0.5s;
+
+        animation-fill-mode: backwards;
+
+        font-size: 35px;
+      }
+      .bannerparagraphs.active {
+        color: rgb(0, 63, 156);
+        font-size: 40px;
+      }
+
+      @keyframes bnanis {
+        0% {
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      #main {
+        height: 100%;
+        width: 100%;
+        font-family: "Lilita One", sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 30px 0;
+        align-items: center;
+        gap: 30px;
+      }
+
+      #wrapper {
+        height: 60vh;
+
+        display: flex;
+        border-radius: 10px;
+        border: 5px solid rgb(3, 24, 48);
+        padding: 20px 50px;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+      }
+
+      #wrapper i {
+        font-size: 25px;
+        pointer-events: none;
+      }
+      #image-container {
+        height: 100%;
+        width: 50vw;
+        overflow: hidden;
+        padding: 0px 30px;
+      }
+      #image-carousel {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        gap: 100px;
+        position: relative;
+      }
+      #image-carousel img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        position: absolute;
+        transition: 1s;
+
+        padding: 0px 15px;
+      }
+      button {
+        cursor: pointer;
+        padding: 10px;
+        background-color: transparent;
+        border-radius: 10px;
+        color: rgb(3, 24, 48);
+      }
+    </style>
+  </head>
+</html>
+<body
+  style="background-color: rgba(128, 128, 128, 0.321); color: rgb(3, 24, 48)"
+>
+  <!-- Start Back To Top  -->
+  <div class="fixed-bottom">
+    <a href="#" class="btn-backtotops"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- End Back To Top  -->
+
+  <!---Start Header Section--->
+  <header>
+    <!---Start Nav Bar-->
+    <nav class="navbar navbar-expand-md fixed-top" style="height: 100px">
+      <a href`="index.html" class="navbar-brand text-light mx-3">
+        <img
+          src="../assets/img/shinnobu/logo2-removebg-preview.png"
+          width="100px"
+          alt="favicon"
+          style="border-radius: 50%; margin: 70px 0 70px 0"
+        />
+        <span
+          class="text-uppercase h3 fw-bold mx-4"
+          style="font-family: 'Times New Roman', Times, serif; font-size: 50px"
+          >Flix<span
+            class="h3"
+            style="
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 50px;
+            "
+          >
+            Vibe</span
+          ></span
+        >
+      </a>
+
+      <button
+        type="button"
+        class="navbar-toggler navbuttons"
+        data-bs-toggle="collapse"
+        data-bs-target="#nav"
+      >
+        <div class="bg-light lines1"></div>
+        <div class="bg-light lines2"></div>
+        <div class="bg-light lines3"></div>
+      </button>
+
+      <div
+        id="nav"
+        class="navbar-collapse collapse justify-content-end text-uppercase fw-bold"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              href="../index.html"
+              class="nav-link mx-2 menuitems menulists"
+              data-filter="home"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="javascript:void(0);"
+              class="nav-link mx-2 menuitems menulists"
+              data-filter="aboutus"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              href="javascript:void(0);"
+              class="nav-link mx-2 menuitems menulists dropdown-toggle"
+              data-filter="movies"
+              data-bs-toggle="dropdown"
+              >Gendres</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="dropdown-item"
+                  data-filter="action"
+                  >Action</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="dropdown-item"
+                  data-filter="horror"
+                  >Horror</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="dropdown-item"
+                  data-filter="romantic"
+                  >Romantic</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="dropdown-item"
+                  data-filter="drama"
+                  >Drama</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="dropdown-item"
+                  data-filter="funny"
+                  >Funny</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="dropdown-item"
+                  data-filter="animation"
+                  >Animation</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="javascript:void(0);"
+              class="nav-link mx-2 menuitems menulists"
+              data-filter="toprated"
+              >Trendings</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="search-input">
+          <a href="" target="_blank" hidden></a>
+          <input type=" text" placeholder="Search..." />
+          <div class="autocom-box"></div>
+          <div class="icon"><i class="fas fa-search"></i></div>
+        </div>
+      </div>
+      <div class="toggle">
+        <i class="fas fa-sun toggle-icon"></i>
+        <i class="fas fa-moon toggle-icon"></i>
+        <div class="toggle-ball"></div>
+      </div>
+    </nav>
+    <!--End Nav Bar-->
+  </header>
+</body>
+<!--Start Banner-->
+             <div class="text-light text-center text-md-end text-sm-center banners" style="font-family: 'Times New Roman', Times, serif;">
+              <h1 class="display-4 bannerheaders auto">Welcome to <span class="display-3 text-uppercase auto" style="font-family: 'Times New Roman', Times, serif;">Flix Vibe</span> Movies Theater</h1>
+              <p class="lead bannerparagraphs auto">Your pleasure is our pleasure, ENJOY your golden time.</p>
+           </div>
+         <!---End Banner--->
+            
+          </header>
+
+        <!---End Header Section----->
+        
+        <div class="title" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+          <h1> Annabelle </h1>
+          <h4>2014 ‧ Horror, Thriller ‧ 1h 39m</h4>
+        </div>
+
+        <aside>
+          <div id="main">
+            <div id="wrapper">
+                <div><button class="active" id="prev" onclick="prev()"><i class="fa-solid fa-arrow-left"></i></button></div>
+                <div id="image-container">
+                    <div id="image-carousel">
+                        <img src="../assets/img/tom/anna1.jpg"
+                            alt="">
+                        <img src="../assets/img/tom/anna2.jpg"
+                            alt="">
+                        <img src="../assets/img/tom/anna3.jpg"
+                            alt="">
+                        <img src="../assets/img/tom/anna4.jpg"
+                            alt="">
+                        <img src="../assets/img/tom/anna5.jpg"
+                            alt="">
+                        
+                    </div>
+                </div>
+                <div><button class="active" id="next" onclick="next()"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+          const wrapper = document.querySelector('#wrapper')
+const carousel = document.querySelector('#image-carousel')
+const images = document.querySelectorAll('img')
+const btn = document.querySelectorAll('button')
+const previous = document.querySelector('#prev')
+const nxt = document.querySelector('#next')
+
+
+images.forEach((slide,index)=>{
+    slide.style.left = `${index * 100}%`
+});
+
+let counter = 0;
+
+const slideImage = ()=>{
+    images.forEach(
+        (e) => {
+            e.style.transform = `translateX(-${counter*100}%)`
+        }
+    )
+}
+
+
+
+const prev = ()=>{
+    if(counter > 0){
+        
+        counter --;
+        slideImage();
+        console.log(counter);
+        
+    }
+}
+const next = ()=>{
+    if(counter <= (images.length - 2)){
+        
+        counter ++;
+        slideImage();
+        console.log(counter);
+        
+    }
+}
+        </script>
+        </aside>
+        <div class="div11">
+          <table style="border: 1px solid rgba(0, 0, 0, 0.144);
+          border-collapse: collapse;
+          padding: 20px 40px;
+          text-align: center;
+          width: 100%;
+          height: 150px; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <tr style="border: 1px solid rgba(0, 0, 0, 0.353);">
+             <th>IMDb<a href=""><i class="fa-brands fa-imdb" style="color: #fde50d;"></i></a></th>
+             <th style="border: 1px solid rgba(0, 0, 0, 0.353)">Rotten Tomatoes<a href=""><i class="fa-brands fa-tomato" style="color: #fde50d;"></i></a></th>
+             <th>Metacritic<a href=""><i class="fa-brands fa-facebook" style="color: #fde50d;"></i></a></th>
+            </tr>
+            <tr>
+             <td>4.5/10</td>
+             <td style="border: 1px solid rgba(0, 0, 0, 0.353);">28%</td>
+             <td>37%</td>
+            </tr>
+         </table>
+        </div>
+        <div class="div10" style="border: 10p solid black; padding: 20px 50px 20px 20px; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          <p>Release date: October 3, 2014 (USA)<hr>
+            <p>Starring: 	Annabelle Wallis, Ward Horton, Alfre Woodard <hr>
+            Director: 	John R. Leonetti<hr>
+            Story by: 	Gary Dauberman <hr>
+            Distributed by: Warner Bros.Pictures<hr>
+            Genres: Horror, Thriller
+            <hr>
+            Rating: R<hr>
+            Box office: 257.6 million</p><hr>
+        </div>
+
+        <p style="font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Synopsis:</b> <span id="dots">&#x226B</span><button onclick="myFunction()" id="myBtn" style="font-size: 15px;">More...</button><br><span id="more" style="display: none; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">  <br>
+                  In "Annabelle," a young couple begins to experience terrifying supernatural occurrences after the husband, John, brings home a vintage doll named Annabelle as a gift for his pregnant wife, Mia. Their once peaceful home becomes a center of fear as the doll, possessed by a malevolent entity, begins to wreak havoc. As the couple seeks help from paranormal experts, they uncover the dark and horrifying origins of the doll, leading to a desperate fight to save their family from the clutches of evil.</span></p>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "More..."; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script><hr>
+
+<section style="height: 550px;">
+  <div class="div12">
+    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Official Trailer</b></h1>
+    <video controls style=" justify-content: center; margin: 0 50px 50px 50px; width: 600px; height: 450px;"><source src="../assets/img/tom/annamv.mp4"></video>
+    
+  </div>
+</section><hr>
+
+<!--<section class="movielink">
+  <p style="font-size: 35px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Watch Here </b> &#x226B </p>
+</section><hr>-->
+
+<section>
+  <h3 style="font-size: 35px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">More like this</h3>
+  <div class="movie-list-container">
+    <div class="movie-list-wrapper">
+      <div class="movie-list">
+
+         <div class="movie-list-item">
+           <img class="movie-list-item-img" src="../assets/img/tom/thewitch-p.jpg" alt="horror2"/>
+           <span class="movie-list-item-title">The Witch</span>
+           <p class="movie-list-item-desc">Running time - 1h 32m
+               <br>Directed by - Robert Eggers</br>
+               <br>Starring - Anya Taylor-Joy, Ralph Ineson, Kate Dickie</br></p>
+               <button type="submit" class="movie-list-item-button"><a class ="a" href="./assets/img/videos/thewitch.mp4" target="_blank">Watch</a></button> 
+         </div>
+
+       <div class="movie-list-item">
+           <img class="movie-list-item-img" src="../assets/img/tom/hereditary.jpg" alt="horror3"/>
+           <span class="movie-list-item-title">Hereditary</span>
+           <p class="movie-list-item-desc">Running time -  2h 7m
+               <br>Directed by - Christopher McQuarrie</br>
+               <br>Starring - Toni Collette, Alex Wolff, Milly Shapiro.</br></p>
+           <button type="submit" class="movie-list-item-button"><a class ="a" href="./assets/img/videos/hereditary.mp4" target="_blank">Watch</a></button>    
+       </div>
+
+       <div class="movie-list-item">
+           <img class="movie-list-item-img" src="../assets/img/tom/annacome home-cv.jpg" alt="horror4"/>
+           <span class="movie-list-item-title" style="font-size: 15px;">Annabelle Comes Home</span>
+           <p class="movie-list-item-desc">Running time - 1h 46m
+               <br>Directed by - Gary Dauberman၊</br>
+               <br>Starring - Mckenna Grace, Madison Iseman, Katie Sarife.</br></p>
+               <button type="submit" class="movie-list-item-button"><a class ="a" href="./assets/img/videos/anna3.mp4" target="_blank">Watch</a></button> 
+       </div>
+
+       <div class="movie-list-item">
+           <img class="movie-list-item-img" src="../assets/img/tom/annacreatecv.jpg" alt="horror5"/>
+           <span class="movie-list-item-title">Annabelle: Creation</span>
+           <p class="movie-list-item-desc">Running time - 1h 49m
+               <br>Directed by - David F. Sandberg</br>
+               <br>Starrig - Stephanie Sigman, Talitha Bateman, Anthony LaPaglia.</br></p>
+               <button type="submit" class="movie-list-item-button"><a class ="a" href="./assets/img/videos/anna2.mp4" target="_blank">Watch</a></button> 
+       </div>
+
+       <div class="movie-list-item">
+           <img class="movie-list-item-img" src="../assets/img/tom/horror6.jpg" alt="horror6"/>
+           <span class="movie-list-item-title">Annabelle</span>
+           <p class="movie-list-item-desc">Running time - 1h 39m
+               <br>Directed by - John R. Leonetti</br>
+               <br>Starring - Annabelle Wallis, Ward Horton, Alfre Woodard.</br></p>
+               <button type="submit" class="movie-list-item-button"><a class ="a" href="./Annabelle.html" target="_blank">Watch</a></button> 
+       </div>
+
+       <div class="movie-list-item">
+           <img class="movie-list-item-img" src="../assets/img/tom/thenun2cv.jpg" alt="horror7"/>
+           <span class="movie-list-item-title">The Nun II</span>
+           <p class="movie-list-item-desc">Running time - 1h 50m
+               <br>Directed by - Michael Chaves</br>
+               <br>Starring - Taissa Farmiga, Jonas Bloquet, Storm Reid.</br></p>
+               <button type="submit" class="movie-list-item-button"><a class ="a" href="./TheNun2.html" target="_blank">Watch</a></button>
+       </div>
+
+       <div class="movie-list-item">
+           <img class="movie-list-item-img" src="../assets/img/tom/thenuncv.jpg" alt="horror8"/>
+           <span class="movie-list-item-title">The Nun</span>
+           <p class="movie-list-item-desc">Running time - 1h 36m
+               <br>Directed by - Corin Hardy.</br>
+               <br>Starring - Taissa Farmiga, Demián Bichir, Jonas Bloquet.</br></p>
+               <button type="submit" class="movie-list-item-button"><a class ="a" href="./TheNun1.html" target="_blank">Watch</a></button> 
+       </div>
+
+       <div class="movie-list-item">
+        <img class="movie-list-item-img" src="../assets/img/tom/conjuring3cv.jpg" alt="horror9"/>
+        <span class="movie-list-item-title">The Conjuring:The Devil Made Me Do It</span>
+        <p class="movie-list-item-desc">Running time - 1h 52m
+            <br>Directed by - Michael Chaves.</br>
+            <br>Starring - Vera Farmiga, Patrick Wilson, Ruairi O'Connor.</br></p>
+            <button type="submit" class="movie-list-item-button"><a class ="a" href="./TheConjuring3.html" target="_blank">Watch</a></button>  
+      </div>
+
+       
+       <div class="movie-list-item">
+        <img class="movie-list-item-img" src="../assets/img/tom/horror10.jpg" alt="horror10"/>
+        <span class="movie-list-item-title">The Conjuring 2</span>
+        <p class="movie-list-item-desc">Running time - 2h 14m
+            <br>Directed by - James Wan.</br>
+            <br>Starring - Vera Farmiga, Patrick Wilson, Madison Wolfe.</br></p>
+            <button type="submit" class="movie-list-item-button"><a  class ="a" href="./TheConjuring2.html"target="_blank">Watch</a></button>  
+      </div>
+
+      <div class="movie-list-item">
+        <img class="movie-list-item-img" src="../assets/img/tom/conjuringcv.jpg" alt="horror11"/>
+        <span class="movie-list-item-title">The Conjuring</span>
+        <p class="movie-list-item-desc">Running time - 1h 52m
+            <br>Directed by - James Wan.</br>
+            <br>Starring - Vera Farmiga, Patrick Wilson, Lili Taylor.</br></p>
+            <button type="submit" class="movie-list-item-button"><a class ="a" href="./TheConjuring1.html" target="_blank">Watch</a></button>  
+      </div>
+
+     </div>
+     <i class="fas fa-chevron-left leftarrow"></i>
+     <i class="fas fa-chevron-right rightarrow"></i>
+
+   </div>
+ </div>
+</section>
+            <!-- Start Card Section -->
+            <!-- <div class="container-fluid">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="filters"><a href="./assets/img/thwinchel/movie1.jpg"><img src="./assets/img/thwinchel/movie1.jpg" width="200" alt="movie1"/></a></div>
+                    <div class="filters"><a href="./assets/img/thwinchel/movie2.jpg"><img src="./assets/img/thwinchel/movie2.jpg" width="200" alt="movie2"/></a></div>
+                    <div class="filters"><a href="./assets/img/thwinchel/movie3.jpg"><img src="./assets/img/thwinchel/movie3.jpg" width="200" alt="movie3"/></a></div>
+                    <div class="filters"><a href="./assets/img/thwinchel/movie4.jpg"><img src="./assets/img/thwinchel/movie4.jpg" width="200" alt="movie4"/></a></div>
+                    <div class="filters"><a href="./assets/img/thwinchel/movie5.jpg"><img src="./assets/img/thwinchel/movie5.jpg" width="200" alt="movie5"/></a></div>
+                    <div class="filters"><a href="./assets/img/thwinchel/movie6.jpg"><img src="./assets/img/thwinchel/movie6.jpg" width="200" alt="movie6"/></a></div>
+                    <div class="filters"><a href="./assets/img/thwinchel/movie7.jpg"><img src="./assets/img/thwinchel/movie7.jpg" width="200" alt="movie7"/></a></div>
+                    <div class="filters"><a href="./assets/img/thwinchel/movie8.jpg"><img src="./assets/img/thwinchel/movie8.jpg" width="200" alt="movie8"/></a></div>
+                    <div class="filters"><a href="./assets/img/thwinchel/movie9.jpg"><img src="./assets/img/thwinchel/movie9.jpg" width="200" alt="movie9"/></a></div>
+                    <div class="filters"><a href="./assets/img/thwinchel/movie10.jpg"><img src="./assets/img/thwinchel/movie10.jpg" width="200" alt="movie10"/></a></div>
+                    <div class="filters"><a href="./assets/img/thwinchel/rommovie1.jpg"><img src="./assets/img/thwinchel/rommovie1.jpg" width="200" alt="rommovie1"/></a></div>
+                    <div class="filters"><a href="./assets/img/thwinchel/romseries1.jpg"><img src="./assets/img/thwinchel/romseries1.jpg" width="200" alt="romseries1"/></a></div>
+                </div>
+            </div> -->
+        <!-- End Card Section -->
+        
+        <!-- Start Subscribe Section -->
+        <!--<section class="subscribes">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5  pb-4" >
+                        <h5 class="display-4 mb-3 fw-bold">Subscribe to Our Website</h5>
+
+                        <form action="" method="">
+
+                            <div class="input-group mb-2">
+                                <i class="fa fa-user input-group-text"></i>
+                                <input type="text" name="regusername" id="regusername" class="form-control" placeholder="Username"/>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <i class="fa fa-envelope input-group-text"></i>
+                                <input type="email" name="regemail" id="regemail" class="form-control" placeholder="Email"/>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <i class="fa fa-key input-group-text"></i>
+                                <input type="password" name="regpassword" id="regpassword" class="form-control" placeholder="password"/>
+                           </div>
+
+                          <div class="form-check form-switch">
+                                <input type="checkbox" name="accept" id="accept" class="form-check-input"/>
+                                <label for="accept">I agreed to get push notify.</label>
+                          </div>
+
+                          <div class="d-grid">
+                                <button type="submit" class="btn btn-primary fw-bold text-uppercase rounded-0 p-2">Subscribe Now</button>
+                          </div>
+                        </form>
+                    </div>
+                    <div class="col-md-7 squareareas" >
+                        
+                        <div class="sqboxes">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!-- End Subscribe Section -->
+
+
+
+        <!-- Start Footer Section -->
+         <footer class="bg-dark px-5">
+            <div class="container-fluid">
+                
+                <div class="row text-light py-4">
+                    <div class="col-lg-3 col-sm-6">
+                        <h6 class="mb-3">Infomation</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="javascript:void(0); " class="footerlinks">Home</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">AboutUs</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Trendings</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Movies</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Series</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Top Rated</a></li>
+                        </ul>
+                    </div>
+                   
+                    <div class="col-lg-3 col-sm-6">
+                        <h6 class="mb-3">Customer Help</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="javascript:void(0); " class="footerlinks">F.A.Q.S</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Search Course</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Latest Information</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Specialist Info</a></li>              
+                        </ul>
+                        <div class="footersocialicons">
+                            <a href="javascript:void(0);"  target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="javascript:void(0); " target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="javascript:void(0); " target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="javascript:void(0); " target="_blank"><i class="fab fa-linkedin-in"></i></a>         
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h6 class="mb-3">We Accept</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="javascript:void(0); " class="footerlinks">Wire Transfer</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Online Payments</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">VIA Payments By Embassy</a></li>     
+                        </ul>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/icons8-visa-48.png" alt="visacard" /></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="./assets/img/sthwinchel/payment/mastercard.png" alt="mastercard" /></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="./assets/img/thwinchel/payment/americancard.png" alt="americancard" /></a></li>   
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="./assets/img/thwinchel/payment/card.png" alt="card" /></a></li> 
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="./assets/img/thwinchel/payment/descoverycard.png" alt="descoverycard" /></a></li>             
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="container">
+                    <div class="text-light d-flex justify-content-between border-top pt-4">
+                        <p>Copyright &copy; <span id="getyear"></span><a href="javascript:void(0);"> Pro </a> "Let's Fight Together Team" All rights reserved.</p>
+                    </div>
+                </div>   
+            </div>
+         </footer>
+        <!-- End Footer Section -->
+
+         <!--bootstrap css1 js1-->
+           <script src="../assets/libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+         <!---jquery js1--->
+           <script src="../assets/libs/jquery/jquery-3.7.1.min.js" type="text/javascript"></script>
+         <!--jquery css1 js1-->
+           <script src="../assets/libs/jquery-ui-1.13.2/jquery-ui.min.js" type="text/javascript"></script>
+         <!--lightbox2 css1 js1---->
+           <script src="../assets/libs/lightbox2-2.11.4/dist/js/lightbox.min.js" type="text/javascript"></script>
+         <!--custom js--->
+         <script src="../js/app.js" type="text/javascript"></script>
+
+           
+     </body>
+ </html>

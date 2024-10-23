@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About us</title>
+        <!--fav icon-->
+        <link href="../assets/img/shinnobu/logo2-removebg-preview.png" rel="icon" type="image/png" sizes="16x16" />
+        <!--bootstrap css1 js1---->
+        <link href="../assets/libs/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!--fontawesome css1--->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--jquery css1 js1-->
+        <link href="../assets/libs/jquery-ui-1.13.2/jquery-ui.min.js" rel="stylesheet" type="text/css" />
+        <!--lightbox2 css1 js1---->
+        <link href="../assets/libs/lightbox2-2.11.4/dist/css/lightbox.min.css" rel="stylesheet" type="text/css" />
+        <!--Custom css-->
+        <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+        a
+        {
+            margin: auto;
+            text-decoration: none;
+        }
+        .darksoul-card1
+        {
+            display: flex;
+            margin: auto;
+            width: 200px;
+            height: 250px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 5px 5px 60px rgba(235, 235, 235, 0.789), -5px -5px 60px rgba(237, 237, 237, 0.811);
+            border-radius: 15px;
+            transition: all 2s;
+            align-items: start;
+            justify-content: right;
+            font-size: 30px;
+            font-family: "Grand Hotel", cursive;
+        }
+        .darksoul-card2
+        {
+            display: flex;
+            margin: auto;
+            width: 200px;
+            height: 250px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 5px 5px 60px rgba(235, 235, 235, 0.742), -5px -5px 60px rgb(237, 237, 237);
+            border-radius: 15px;
+            transition: all 2s;
+            align-items: start;
+            justify-content: center;
+            font-size: 30px;
+            font-family: 'Kaushan Script', sans-serif;
+        }
+        .darksoul-card3
+        {
+            display: flex;
+            margin: auto;
+            width: 200px;
+            height: 250px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 5px 5px 60px rgba(235, 235, 235, 0.767), -5px -5px 60px rgba(237, 237, 237, 0.767);
+            border-radius: 15px;
+            transition: all 2s;
+            align-items: end;
+            justify-content: left;
+            font-size: 30px;
+            font-family: "Kaushan Script", cursive;
+        }
+        .circle1
+        {
+            position: absolute;
+            margin: auto;
+            margin-right: 0px;
+            width: 70px;
+            height: 70px;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #f99188 45%, #fb967f 60%, #e5a18a 90%);
+            border-radius: 0px 15px 0px 50px;
+            transition: all 0.5s;
+            
+        }
+        .darksoul-card1:hover .circle1
+        {
+
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #f19087 45%, #dba28c 60%, #edb0a6 90%);
+            width: 200px;
+            height: 250px;
+            border-radius: 15px;
+            transition: all 0.5s;
+        }
+        .darksoul-card1:hover .content
+        {
+            color: white;
+        }
+        .circle2
+        {
+            position: absolute;
+            margin: auto;
+            margin-top: 45px;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(219, 139, 139);
+            border-radius: 50%;
+            transition: all 0.5s;
+            
+        }
+        .darksoul-card2:hover .circle2
+        {
+            margin-top: 0px;
+            background-color: rgb(230, 131, 131);
+            width: 200px;
+            height: 250px;
+            border-radius: 15px;
+            transition: all 0.5s;
+        }
+        .darksoul-card2:hover .content
+        {
+            color: white;
+        }
+        .circle3
+        {
+            position: absolute;
+            margin: auto;
+            margin-top: 35px;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(255, 201, 201);
+            border-radius: 0px 50px 0px 15px;
+            transition: all 0.5s;
+            
+        }
+        .darksoul-card3:hover .circle3
+        {
+            margin-top: 0px;
+            background-color: rgb(255, 201, 201);
+            width: 200px;
+            height: 250px;
+            border-radius: 15px;
+            transition: all 0.5s;
+        }
+        .content
+        {
+            margin: auto;
+            z-index: 100;
+            color: black;
+            font-weight: 500;
+        }
+        @media only screen and (max-width: 600px) 
+        {
+            body
+            {
+                flex-direction: column;
+            }
+        }
+        .darksoul-card1 img
+        {
+            position: absolute;
+            margin: auto;
+            padding-top: 8px;
+            padding-right: 8px;
+        }
+        .darksoul-card2 img
+        {
+            position: absolute;
+            margin: auto;
+            margin-top: 35px;
+            padding-top: 12px;
+        }
+        .darksoul-card3 img
+        {
+            position: absolute;
+            margin: auto;
+            padding-left: 8px;
+            padding-bottom: 8px;
+        }
+        .disclaimer
+        {
+            position: absolute;
+            bottom: 0px; 
+            left: 0; 
+            margin-left: auto; 
+            right: 0; 
+            margin-right: auto; 
+            width: fit-content;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .disclaimer a
+        {
+            text-decoration: none;
+            color: #202020;
+            font-family: "Kaushan Script", cursive;
+            font-weight: 900;
+        }
+        .disclaimer a:hover
+        {
+            text-decoration: overline;
+        }
+        </style>
+        
+    </head>
+
+    <body>
+        <!-- Start Back To Top  -->
+          <div class="fixed-bottom">
+              <a href="#" class="btn-backtotops"><i class="fas fa-arrow-up"></i></a>
+          </div>
+        <!-- End Back To Top  -->
+        
+        <!---Start Header Section--->
+          <header>
+             <!---Start Nav Bar-->
+              <nav class="navbar navbar-expand-md fixed-top" style="height: 100px";>
+                <a href="index.html" class="navbar-brand text-light mx-3">
+                   <img src="../assets/img/shinnobu/logo2-removebg-preview.png" width="100px" alt="favicon" style="border-radius: 50%; margin-bottom: 10px;"/>
+                   <span class="text-uppercase h3 fw-bold mx-4" style="font-family: 'Times New Roman', Times, serif; font-size: 50px;">Flix<span class="h3" style="font-family: 'Times New Roman', Times, serif; font-size: 50px;"> Vibe</span></span>
+                </a>
+
+                <button type="button" class="navbar-toggler navbuttons " data-bs-toggle="collapse" data-bs-target="#nav">
+                   <div class="bg-light lines1"></div>
+                   <div class="bg-light lines2"></div>
+                   <div class="bg-light lines3"></div>
+                </button>
+
+                <div id="nav" class="navbar-collapse collapse justify-content-end text-uppercase fw-bold">
+                   <ul class="navbar-nav">
+                      <li class="nav-item"><a href="../index.html" class="nav-link mx-2 menuitems menulists" data-filter="home">Home</a></li>
+                      <li class="nav-item"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists" data-filter="aboutus" >About Us</a></li>
+                      <li class="nav-item dropdown"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists dropdown-toggle" data-filter="movies" data-bs-toggle="dropdown">Gendres</a>
+                          <ul class="dropdown-menu">
+                              <li><a href="../project/action.html" class="dropdown-item" data-filter="action">Action</a></li>
+                              <li><a href="../project/horror.html" class="dropdown-item" data-filter="horror">Horror</a></li>
+                              <li><a href="../project/" class="dropdown-item" data-filter="romantic">Romantic</a></li>
+                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="drama">Drama</a></li>
+                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="funny">Funny</a></li>
+                              <li><a href="../project/animation.html" class="dropdown-item" data-filter="animation">Animation</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists" data-filter="toprated">Trendings</a></li>
+                   </ul>
+                </div>
+                <div class="wrapper">
+                  <div class="search-input">
+                      <a href="" target="_blank" hidden></a>
+                      <input type=" text" placeholder="Search...">
+                      <div class="autocom-box"></div>
+                      <div class="icon"><i class=" fas fa-search"></i></div>
+                  </div>
+                </div>  
+                <div class="toggle">
+                  <i class="fas fa-sun toggle-icon"></i>
+                  <i class="fas fa-moon toggle-icon"></i>
+                  <div class="toggle-ball"></div>
+                </div>
+              </nav>
+             <!--End Nav Bar-->
+            
+             <!--Start Banner-->
+              <div class="text-light text-center text-md-end text-sm-center banners">
+                <h1 class="display-4 bannerheaders auto">About The <span class="display-3 text-uppercase auto" style="font-family: 'Times New Roman', Times, serif;">Flix Vibe</span><b style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Fliming Website</b></h1>
+                <p class="lead bannerparagraphs auto">Your pleasure is our pleasure, ENJOY your golden time.</p>
+              </div>
+            <!---End Banner--->
+          </header>
+        <!---End Header Section----->  
+
+        <!--Start Movie Section -->
+         <div class="subscribes">
+            <div class="greeting">
+                <h1 class="display-4 bannerheaders auto" style=" text-align: center; font-size: 45px;"><b>Flix Vibe</b> Movie Website is made by "Let's Fight Together Team.<br>We hope you to enjoy your free time with watching movies from our "Flix Vibe" movies website.</h1><br><hr>
+            </div><br><br>
+
+            <div class="cardsection" style="display: flex;">
+                <a href="https://www.instagram.com/dark.soul.io/" target="_blank">
+                    <div class="darksoul-card1">
+                        <div class="circle1"></div>
+                        <img src="../assets/img/shinnobu/icons8-website-50.png" alt="Our website" width="48" height="48" style="z-index: 100;" />
+                        <h2 class="content">Our Website</h2>
+                    </div>
+                    </a>
+                    <a href="./ourteam.html" target="_blank">
+                    <div class="darksoul-card2">
+                        <div class="circle2"></div>
+                        <img src="../assets/img/shinnobu/team.png" alt="Our Team"  style="z-index: 100;" />
+                        <p class="content">Our Team</p>
+                    </div> 
+                    </a> 
+                    <a href="../project/ourdevelopment.html" target="_blank">
+                    <div class="darksoul-card3">
+                        <div class="circle3"></div>
+                        <img src="../assets/img/shinnobu/codelogo.png" alt="Development" width="48" height="48" style="z-index: 100;" />
+                        <h4 class="content" style="font-weight: 600;">Development</h4>
+                    </div>
+                    </a>
+                    <p class="disclaimer">Designed & Created by <a href="https://darksoul-codepen.github.io/" target="_blank">DarkSoul</a></p>
+            </div><br><br><br><hr>
+         </div>
+        <!--End Movie Section -->
+        
+        <!-- Start Subscribe Section -->
+        <section class="subscribes">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5  pb-4" >
+                        <h5 class="display-4 mb-3 fw-bold">Subscribe to Our Website</h5>
+
+                        <form action="" method="">
+
+                            <div class="input-group mb-2">
+                                <i class="fa fa-user input-group-text"></i>
+                                <input type="text" name="regusername" id="regusername" class="form-control" placeholder="Username"/>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <i class="fa fa-envelope input-group-text"></i>
+                                <input type="email" name="regemail" id="regemail" class="form-control" placeholder="Email"/>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <i class="fa fa-key input-group-text"></i>
+                                <input type="password" name="regpassword" id="regpassword" class="form-control" placeholder="password"/>
+                           </div>
+
+                          <div class="form-check form-switch">
+                                <input type="checkbox" name="accept" id="accept" class="form-check-input"/>
+                                <label for="accept">I agreed to get push notify.</label>
+                          </div>
+
+                          <div class="d-grid">
+                                <button type="submit" class="btn btn-primary fw-bold text-uppercase rounded-0 p-2">Subscribe Now</button>
+                          </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-7 squareareas" >
+                        
+                        <div class="sqboxes">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Subscribe Section -->
+
+
+
+        <!-- Start Footer Section -->
+         <footer class="bg-dark px-5">
+            <div class="container-fluid">
+                
+                <div class="row text-light py-4">
+                    <div class="col-lg-3 col-sm-6">
+                        <h6 class="mb-3">Infomation</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="javascript:void(0); " class="footerlinks">Home</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">AboutUs</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Trendings</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Movies</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Series</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Top Rated</a></li>
+                        </ul>
+                    </div>
+                   
+                    <div class="col-lg-3 col-sm-6">
+                        <h6 class="mb-3">Customer Help</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="javascript:void(0); " class="footerlinks">F.A.Q.S</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Search Course</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Latest Information</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Specialist Info</a></li>              
+                        </ul>
+                        <div class="footersocialicons">
+                            <a href="javascript:void(0);"  target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="javascript:void(0); " target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="javascript:void(0); " target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="javascript:void(0); " target="_blank"><i class="fab fa-linkedin-in"></i></a>         
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-lg-3 col-sm-6">
+                        <h6 class="mb-3">We Accept</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="javascript:void(0); " class="footerlinks">Wire Transfer</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">Online Payments</a></li>
+                            <li><a href="javascript:void(0); " class="footerlinks">VIA Payments By Embassy</a></li>     
+                        </ul>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/icons8-visa-48.png" alt="visacard" /></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/mastercard.png" alt="mastercard" style="width: 48px; height: 48px;" /></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/americancard.png" alt="americancard" style="width: 48px; height: 48px;" /></a></li>   
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/icons8-bank-cards-48.png" alt="card" /></a></li> 
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/discoverycard.png" alt="descoverycard" /></a></li>             
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="container">
+                    <div class="text-light d-flex justify-content-between border-top pt-4">
+                        <p>Copyright &copy; <span id="getyear"></span><a href="javascript:void(0);"> Pro </a> "Let's Fight Together Team" All rights reserved.</p>
+                    </div>
+                </div>   
+            </div>
+         </footer>
+        <!-- End Footer Section -->
+
+        
+
+
+
+
+
+
+
+
+
+
+         <!--bootstrap css1 js1-->
+           <script src="../assets/libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+         <!---jquery js1--->
+           <script src="../assets/libs/jquery/jquery-3.7.1.min.js" type="text/javascript"></script>
+         <!--jquery css1 js1-->
+           <script src="../assets/libs/jquery-ui-1.13.2/jquery-ui.min.js" type="text/javascript"></script>
+         <!--lightbox2 css1 js1---->
+           <script src="../assets/libs/lightbox2-2.11.4/dist/js/lightbox.min.js" type="text/javascript"></script>
+         <!--custom js--->
+           <script src="../js/app.js" type="text/javascript"></script>
+     </body>
+ </html>

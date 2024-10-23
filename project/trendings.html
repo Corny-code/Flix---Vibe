@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trending</title>
+<!--fav icon-->
+<meta name="description" content="Flix Vibe is the movies and series website. You can watch a lot of difference and popular movies and series in the website.">
+<meta name="keywords" content="Flix Vibe, Movies, Series, Popular, Trendings, Popular in this year">
+<meta name="author" content="Let's Fight Together Team">
+<link href="../assets/img/shinnobu/logo2-removebg-preview.png" rel="icon" type="image/png" sizes="16x16" />
+<!--bootstrap css1 js1---->
+<link href="../assets/libs/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!--fontawesome css1--->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--jquery css1 js1-->
+<link href="../assets/libs/jquery-ui-1.13.2/jquery-ui.min.js" rel="stylesheet" type="text/css" />
+<!--lightbox2 css1 js1---->
+<link href="../assets/libs/lightbox2-2.11.4/dist/css/lightbox.min.css" rel="stylesheet" type="text/css" />
+<!--Custom css-->
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1400px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Trendings</h1>
+<hr>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('movies')"> Movies</button>
+  <button class="btn" onclick="filterSelection('series')"> Series</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column movies">
+    <div class="content">
+      <img src="../assets/img/shinnobu/anni8.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <h4>The Wild Robot</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/ThewildRobot.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+  <div class="column series">
+    <div class="content">
+    <img src="../assets/img/ella/romseries1.jpg" alt="Lights" style="width:320px; height: 450px;">
+      <h4>No Gain No Love</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/NogainNolove.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column movies">
+    <div class="content">
+      <img src="../assets/img/shinnobu/anni2.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <h4>Transformer One</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/ThewildRobot.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+  
+  <div class="column series">
+    <div class="content">
+    <img src="../assets/img/ella/fbccv.jfif" alt="Lights" style="width:320px; height: 450px;">
+      <h4>Family By Choice</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/NogainNolove.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column movies">
+    <div class="content">
+      <img src="../assets/img/tom/thenun2cv.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <h4>The Nun-2</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/ThewildRobot.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column series">
+    <div class="content">
+    <img src="../assets/img/Strawberry/goeastcv.jpg" alt="Lights" style="width:320px; height: 450px;">
+      <h4>Go East</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/NogainNolove.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column movies">
+    <div class="content">
+      <img src="../assets/img/shinnobu/anni7.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <h4>Ultraman: Rising</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/ThewildRobot.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column series">
+    <div class="content">
+    <img src="../assets/img/ella/romseries1.jpg" alt="Lights" style="width:320px; height: 450px;">
+      <h4>No Gain No Love</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/NogainNolove.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+  <div class="column movies">
+    <div class="content">
+      <img src="../assets/img/thomaswalker/extractioncv.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <h4>Extraction</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/Extraction.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column series">
+    <div class="content">
+    <img src="../assets/img/ella/lndcv.jpg" alt="Lights" style="width:320px; height: 450px;">
+      <h4>Love Next Door</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/lovenextdoor.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column movies">
+    <div class="content">
+      <img src="../assets/img/shinnobu/thelmacv.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <h4>Thelma</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/Thelma.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column series">
+    <div class="content">
+    <img src="../assets/img/ella/dslumpcover.jpg" alt="Lights" style="width:320px; height: 450px;">
+      <h4>Doctor Slump</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/doctorslump.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column movies">
+    <div class="content">
+      <img src="../assets/img/tom/horror6.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <h4>Annabelle</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/Annabelle.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column series">
+    <div class="content">
+    <img src="../assets/img/paing/23.5cv.jpg" alt="Lights" style="width:320px; height: 450px;">
+      <h4>23.5</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/thai23.5.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column movies">
+    <div class="content">
+      <img src="../assets/img/shinnobu/elementalcv2.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <h4>Elemental</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/elemental.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+  <div class="column series">
+    <div class="content">
+    <img src="../assets/img/ella/mrqueencv.jpg" alt="Lights" style="width:320px; height: 450px;">
+      <h4>Mr.Queen</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/Mrqueen.html" style="text-decoration: none;">Watch</a></button>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<!--bootstrap css1 js1-->
+<script src="../assets/libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<!---jquery js1--->
+  <script src="../assets/libs/jquery/jquery-3.7.1.min.js" type="text/javascript"></script>
+<!--jquery css1 js1-->
+  <script src="../assets/libs/jquery-ui-1.13.2/jquery-ui.min.js" type="text/javascript"></script>
+<!--lightbox2 css1 js1---->
+  <script src="../assets/libs/lightbox2-2.11.4/dist/js/lightbox.min.js" type="text/javascript"></script>
+<!--custom js--->
+  <script src="../js/app.js" type="text/javascript"></script>
+  <script src="https://kit.fontawsome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
