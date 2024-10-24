@@ -1,61 +1,203 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://flix-vibe-suea.onrender.com/</loc>
-  <lastmod>2024-10-17T16:35:36+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://flix-vibe.onrender.com/</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://flix-vibe-suea.onrender.com/project/action.html</loc>
-  <lastmod>2024-10-17T16:35:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://flix-vibe.onrender.com/index.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://flix-vibe-suea.onrender.com/project/horror.html</loc>
-  <lastmod>2024-10-17T16:35:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://flix-vibe.onrender.com/project/aboutus.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://flix-vibe-suea.onrender.com/project/animation.html</loc>
-  <lastmod>2024-10-17T16:35:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://flix-vibe.onrender.com/project/action.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://flix-vibe-suea.onrender.com/project/Transformersone.html</loc>
-  <lastmod>2024-10-17T16:35:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://flix-vibe.onrender.com/project/horror.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://flix-vibe-suea.onrender.com/project/ThewildRobot.html</loc>
-  <lastmod>2024-10-17T16:35:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://flix-vibe.onrender.com/project/drama.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://flix-vibe-suea.onrender.com/project/lovenextdoor.html</loc>
-  <lastmod>2024-10-17T16:35:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://flix-vibe.onrender.com/project/animation.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://flix-vibe-suea.onrender.com/project/elemental.html</loc>
-  <lastmod>2024-10-17T16:35:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://flix-vibe.onrender.com/project/trendings.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://flix-vibe-suea.onrender.com/index.html</loc>
-  <lastmod>2024-10-17T16:35:36+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://flix-vibe.onrender.com/project/ThewildRobot.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
-<<<<<<< HEAD
+<url>
+<loc>https://flix-vibe.onrender.com/project/Thelma.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/deadpool.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/dashingyouth.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/TheJudgefromHell.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/howtomakemillion.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/Transformersone.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/DearHyeri.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/thai23.5.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/goeast.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/BadlandHunters.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/lovenextdoor.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/insideout2.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/ourteam.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/ourdevelopment.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/lovelyrunner.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/queenoftears.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/doctorslump.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/twinklingwatermelon.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/Itaewonclass.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/twentyfivetwentyone.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/ourbelovedsummer.html</loc>
+<lastmod>2024-10-24T07:41:19+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/elemental.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/NogainNolove.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/Extraction.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/Annabelle.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/Mrqueen.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/TheNun2.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/TheNun1.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/TheConjuring3.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/TheConjuring2.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://flix-vibe.onrender.com/project/TheConjuring1.html</loc>
+<lastmod>2024-10-24T07:41:18+00:00</lastmod>
+<priority>0.51</priority>
+</url>
 </urlset>
-=======
-</urlset>
->>>>>>> ff75ec646d37377869a38f41001c89e12cb57ef2
