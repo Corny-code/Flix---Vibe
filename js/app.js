@@ -126,7 +126,7 @@ getyear.textContent = getfullyear;
 
 });
 
-  let suggestions = [
+let suggestions = [
   //ABC Normal Letters
   "The Wild Robot",
   "Dear Hyeri",
@@ -155,7 +155,7 @@ const searchWrapper = document.querySelector( ".search-input" );
 const inputBox = searchWrapper.querySelector( "input" );
 const suggBox = searchWrapper.querySelector(".autocom-box" );
 const icon = searchWrapper.querySelector(".icon");
-let linkTag = searchWrapper.querySelector( "a" );
+let linkTag = searchWrapper.querySelector( "filter" );
 let webLink;
 
 // if user press any key and release
@@ -164,12 +164,12 @@ inputBox.onkeyup = (e) => {
   let emptyArray = [];
   
   if(userData) {
-    icon.onclick = () => {
-      let searchQuery = inputBox.value;
-      window.location.href = `https://google.com/search?query=${searchQuery}`;
-    };
-
-    
+      icon.onclick = () => {
+          webLink = "https://flix-vibe.onrender.com/"+ userData+"&oq="+ userData
+          linkTag.setAttribute( "href", webLink) ;
+          console.log(webLink);
+          linkTag.click( );
+      }
       emptyArray = suggestions.filter((data) => {
 
           // Filtering array value and user characters to lowercase and return on ly those words which are start with user enetered chars
@@ -199,10 +199,12 @@ inputBox.onkeyup = (e) => {
 function select(element, event ){
   let selectData = element.textContent;
   inputBox.value = selectData;
-  icon.onclick = () => {
-    let searchQuery = inputBox.value;
-    window.location.href = `https://google.com/search?query=${searchQuery}`;
-  };
+  icon.onclick = ()=>{
+    window.location.href = 'index.html'
+      webLink = "https://flix-vibe.onrender.com/"+ selectData+"&oq="+ selectData
+      linkTag.setAttribute ( "href", webLink);
+      linkTag.click( );
+  }
   searchWrapper.classList.remove( "active");
 }
 

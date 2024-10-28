@@ -131,17 +131,17 @@ aside{
   position: relative;
   width: 50px;
   height: 50px;
-  border: 3px solid #1a1919;
+  border: 3px solid black;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .carouselbutton span:hover{
-  opacity: 1;
+  color: navy;
 }
 
 .carouselbutton span::before{
@@ -150,8 +150,8 @@ aside{
   left: 20px;
   width: 10px;
   height: 10px;
-  border-top: 3px solid #1a1919;
-  border-left: 3px solid #1a1919;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
   rotate: -45deg;
 }
 
@@ -162,8 +162,8 @@ aside{
   right: 20px;
   width: 10px;
   height: 10px;
-  border-top: 3px solid #1a1919;
-  border-left: 3px solid #1a1919;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
   rotate: 135deg;
 }
 
@@ -220,10 +220,10 @@ aside{
                           <ul class="dropdown-menu">
                               <li><a href="./project/action.html" class="dropdown-item" data-filter="action">Action</a></li>
                               <li><a href="./project/horror.html" class="dropdown-item" data-filter="horror">Horror</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="romantic">Romantic</a></li>
-                              <li><a href="./project/drama.html" class="dropdown-item" data-filter="drama">Drama</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="funny">Comedy</a></li>
                               <li><a href="./project/animation.html" class="dropdown-item" data-filter="animation">Animation</a></li>
+                              <li><a href="./project/drama.html" class="dropdown-item" data-filter="drama">Drama(Korea)</a></li>
+                              <li><a href="./project/drama1.html" class="dropdown-item" data-filter="funny">Drama(Thailand)</a></li>
+                              <li><a href="./project/chinese.html" class="dropdown-item" data-filter="animation">Series(Chinese)</a></li>
                           </ul>
                       </li>
                       <li class="nav-item"><a href="./project/trendings.html" class="nav-link mx-2 menuitems menulists" data-filter="toprated">Trendings</a></li>
@@ -231,7 +231,7 @@ aside{
                 </div>
                 <div class="wrapper">
                   <div class="search-input">
-                      <a href="./project/ThewildRobot.html" target="_serf" hidden></a>
+                      <filter href="" target="_serf" hidden></filter>
                       <input type="text" id="search" placeholder="Search...">
                       <div class="autocom-box"></div>
                       <div class="icon"><i class=" fas fa-search"></i></div>
@@ -305,8 +305,8 @@ aside{
             </div>
           </div>
           <div class="carouselbutton">
-            <span class="prev"></span>
-            <span class="next"></span>
+            <span class="prev" onclick="plusSlides(-1)"></span>
+            <span class="next" onclick="plusSlides(1)"></span>
           </div>
           <script>
             let prev = document.querySelector('.prev');
@@ -318,7 +318,7 @@ aside{
             })
             prev.addEventListener('click', function(){
               let items = document.querySelectorAll('.iiteem');
-              document.querySelector('.carousel1').appendChild(items[items.length - 1]);
+              document.querySelector('.carousel1').prepend(items[items.length - 1]);
             })
           </script>
         </aside>
@@ -474,9 +474,9 @@ aside{
                     <div class="col-lg-3 col-sm-6">
                         <h6 class="mb-3">Infomation</h6>
                         <ul class="list-unstyled">
-                            <li><a href="javascript:void(0); " class="footerlinks">Home</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">AboutUs</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Trendings</a></li>
+                            <li><a href="index.html" class="footerlinks">Home</a></li>
+                            <li><a href="./project/aboutus.html " class="footerlinks">AboutUs</a></li>
+                            <li><a href="./project/trendings.html " class="footerlinks">Trendings</a></li>
                             <li><a href="javascript:void(0); " class="footerlinks">Movies</a></li>
                             <li><a href="javascript:void(0); " class="footerlinks">Series</a></li>
                             <li><a href="javascript:void(0); " class="footerlinks">Top Rated</a></li>
