@@ -8,7 +8,7 @@
 
         <!--fav icon-->
         <meta name="description" content="Flix Vibe is the movies and series website. You can watch a lot of difference and popular movies and series in the website.">
-        <meta name="keywords" content="Flix Vibe, Movies, Series, Popular, Trendings, Popular in this year">
+        <meta name="keywords" content="Flix Vibe, Movies, Series, Popular, Trendings, Popular in this year, Vibe, Flix, Vibe Flix, ဖလစ်ဗွိုက်, မူဗွီ ဝက်ဘ်ပေ့ဂ်ျ">
         <meta name="author" content="Let's Fight Together Team">
         <link href="./assets/img/shinnobu/logo2-removebg-preview.png" rel="icon" type="image/png" sizes="16x16" />
         <!--bootstrap css1 js1---->
@@ -232,12 +232,13 @@ aside{
                 </div>
                 <div class="wrapper">
                   <div class="search-input">
-                      <filter href="" target="_serf" hidden></filter>
-                      <input type="text" id="search" placeholder="Search...">
-                      <div class="autocom-box"></div>
-                      <div class="icon"><i class=" fas fa-search"></i></div>
+                      <input type="text" id="search" placeholder="Search..." onkeyup="showSuggestions()">
+                      <div class="autocom-box" id="suggestions" style="display: none;"></div>
+                      <div class="icon" onclick="searchPage()">
+                          <i class="fas fa-search"></i>
+                      </div>
                   </div>
-                </div>  
+              </div>  
                 <div class="toggle">
                   <i class="fas fa-sun toggle-icon"></i>
                   <i class="fas fa-moon toggle-icon"></i>
@@ -478,9 +479,9 @@ aside{
                             <li><a href="index.html" class="footerlinks">Home</a></li>
                             <li><a href="./project/aboutus.html " class="footerlinks">AboutUs</a></li>
                             <li><a href="./project/trendings.html " class="footerlinks">Trendings</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Movies</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Series</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Top Rated</a></li>
+                            <li><a href="./project/available.html " class="footerlinks">Movies</a></li>
+                            <li><a href="./project/available.html " class="footerlinks">Series</a></li>
+                            <li><a href="./project/available.html " class="footerlinks">Top Rated</a></li>
                         </ul>
                     </div>
                    

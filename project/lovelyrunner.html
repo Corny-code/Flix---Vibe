@@ -168,7 +168,7 @@ button{
         
     </head>
 
-    <body style="background-color: rgba(128, 128, 128, 0.321); color: rgb(3, 24, 48);">
+    <body>
         <!-- Start Back To Top  -->
           <div class="fixed-bottom">
               <a href="#" class="btn-backtotops"><i class="fas fa-arrow-up"></i></a>
@@ -191,21 +191,21 @@ button{
                 </button>
 
                 <div id="nav" class="navbar-collapse collapse justify-content-end text-uppercase fw-bold">
-                   <ul class="navbar-nav">
-                      <li class="nav-item"><a href="../index.html" class="nav-link mx-2 menuitems menulists" data-filter="home">Home</a></li>
-                      <li class="nav-item"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists" data-filter="aboutus" >About Us</a></li>
-                      <li class="nav-item dropdown"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists dropdown-toggle" data-filter="movies" data-bs-toggle="dropdown">Gendres</a>
-                          <ul class="dropdown-menu">
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="action">Action</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="horror">Horror</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="romantic">Romantic</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="drama">Drama</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="funny">Funny</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="animation">Animation</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists" data-filter="toprated">Trendings</a></li>
-                   </ul>
+                  <ul class="navbar-nav">
+                    <li class="nav-item"><a href="../index.html" class="nav-link mx-2 menuitems menulists" data-filter="home">Home</a></li>
+                    <li class="nav-item"><a href="./aboutus.html" class="nav-link mx-2 menuitems menulists" data-filter="aboutus" >About Us</a></li>
+                    <li class="nav-item dropdown"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists dropdown-toggle" data-filter="movies" data-bs-toggle="dropdown">Gendres</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="./action.html" class="dropdown-item" data-filter="action">Action</a></li>
+                          <li><a href="./horror.html" class="dropdown-item" data-filter="horror">Horror</a></li>
+                          <li><a href="./animation.html" class="dropdown-item" data-filter="animation">Animation</a></li>
+                          <li><a href="./drama.html" class="dropdown-item" data-filter="drama">Drama(Korea)</a></li>
+                          <li><a href="./drama1.html" class="dropdown-item" data-filter="funny">Drama(Thailand)</a></li>
+                          <li><a href="./chinese.html" class="dropdown-item" data-filter="animation">Series(Chinese)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="./trendings.html" class="nav-link mx-2 menuitems menulists" data-filter="toprated">Trendings</a></li>
+                 </ul>
                 </div>
                 <div class="wrapper">
                   <div class="search-input">
@@ -234,400 +234,419 @@ button{
 
         <!---End Header Section----->
         
-        <div class="title" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-          <h1>Lovely Runner</h1>
-          <h4>2024 ‧ Fantasy . 1 season</h4>
-        </div>
+        <div class="subscribes">
 
-        <aside>
-          <div id="main">
-            <div id="wrapper">
-                <div><button class="active" id="prev" onclick="prev()"><i class="fa-solid fa-arrow-left"></i></button></div>
-                <div id="image-container">
-                    <div id="image-carousel">
-                        <img src="../assets/img/ella/runner1.jpg"
-                            alt="">
-                        <img src="../assets/img/ella/runner2.jpg"
-                            alt="">
-                        <img src="../assets/img/ella/runner3.jpg"
-                            alt="">
-                        <img src="../assets/img/ella/runner4.jpg"
-                            alt="">
-                        <img src="../assets/img/ella/runner5.jpg"
-                            alt="">
-                        <img src="../assets/img/ella/runner6.jpg"
-                            alt="">
-                        
-                    </div>
-                </div>
-                <div><button class="active" id="next" onclick="next()"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-            </div>
-        </div>
-    
-        <script>
-          const wrapper = document.querySelector('#wrapper')
-const carousel = document.querySelector('#image-carousel')
-const images = document.querySelectorAll('img')
-const btn = document.querySelectorAll('button')
-const previous = document.querySelector('#prev')
-const nxt = document.querySelector('#next')
-
-
-images.forEach((slide,index)=>{
-    slide.style.left = `${index * 100}%`
-})
-let counter = 0;
-
-const slideImage = ()=>{
-    images.forEach(
-        (e) => {
-            e.style.transform = `translateX(-${counter*100}%)`
-        }
-    )
-}
-
-
-
-const prev = ()=>{
-    if(counter > 0){
-        
-        counter --;
-        slideImage();
-        console.log(counter);
-        
-    }
-}
-const next = ()=>{
-    if(counter <= (images.length - 2)){
-        
-        counter ++;
-        slideImage();
-        console.log(counter);
-        
-    }
-}
-        </script>
-        </aside>
-
-        
-
-        <div class="div11">
-          <table style="border: 1px solid rgba(0, 0, 0, 0.144);
-          border-collapse: collapse;
-          padding: 20px 40px;
-          text-align: center;
-          width: 100%;
-          height: 150px; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-            <tr style="border: 1px solid rgba(0, 0, 0, 0.353);">
-             <th>IMDb<a href=""><i class="fa-brands fa-imdb" style="color: #fde50d;"></i></a></th>
-             <th style="border: 1px solid rgba(0, 0, 0, 0.353)">My Drama List<a href=""><i class="fa-brands fa-tomato" style="color: #fde50d;"></i></a></th>
-             <th>viki<a href=""><i class="fa-brands fa-facebook" style="color: #fde50d;"></i></a></th>
-            </tr>
-            <tr>
-             <td>8.7/10</td>
-             <td style="border: 1px solid rgba(0, 0, 0, 0.353);">9/10</td>
-             <td>9.8/10</td>
-            </tr>
-         </table>
-        </div>
-        <div class="div10" style="border: 10p solid black; padding: 20px 50px 20px 20px; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-          <p>Release date: April 8 - May 28, 2024<hr>
-            Director: Yoon Jong-ho, Kim Tae-yeop<hr>
-            Written by: Lee Shi-eun<hr>
-            Starring: Byron Woo Seok, Kim Hye Yoon<hr>
-            Genres: Time slip, Romantic comedy, Fantasy<hr>
-            original network: tvN<hr>
-            </p>
-        </div>
-
-        <p style="font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Synopsis:</b> <span id="dots">&#x226B</span><button onclick="myFunction()" id="myBtn" style="font-size: 15px;">More...</button><br><span id="more" style="display: none; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><br>
-            Ryu Sun-Jae (Byeon Woo-Seok) is an idol who has achieved a lot of success since his debut.  But it was the entertainment industry that was giving him a lot of stress. 
-
-            A girl named Im Sol (Kim Hye-Yoon) had to give up her dream after an accident when she was young. 
-           
-            At that time, Ryu Sun-Jae's songs on the radio gave her comfort.  This is the reason why she became a fan girl.
-           
-            One day, Im Sol is saddened to hear the news that Ryu Sun-Jae has died after taking sleeping pills. 
-           
-            After that, he mysteriously returns to 15 years ago and meets Ryu Sun-Jae, a 19-year-old high school student.  In this way, if Im Sol tries all kinds of things to save her idol 
-            Ryu Sun-Jae, let's see together how love will grow between the two...</span></p>
-
-<script>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "More..."; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Less"; 
-    moreText.style.display = "inline";
-  }
-}
-</script><hr>
-
-<section style="height: 550px;">
-  <div class="div12">
-    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Official Trailer</b></h1>
-    <video controls style=" justify-content: center; margin: 0 50px 50px 50px;"><source src="../assets/img/ella/runnermv4.mp4"></video>
-    
-  </div>
-</section>
-
-<section class="movielink">
-
-  <p style="font-size: 35px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Watch here</b> <span id="dotss"></span><button onclick="myFunction()" id="myBtnn" style="font-size: 15px;">&#x226B</button><br><span id="moree" style="display: none; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><br>
-    <a href="https://t.me/Moviesk018/153">Episode-1</a>
-    <a href="https://t.me/Moviesk018/153">Episode-2</a>
-    <a href="https://t.me/Moviesk018/153">Episode-3</a>
-    <a href="https://t.me/Moviesk018/153">Episode-4</a>
-    <a href="https://t.me/Moviesk018/153">Episode-1</a><a href="https://t.me/Moviesk018/153">Episode-1</a>
-    </span></p>
-
-    <script>
-      function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("myBtn");
-        var dotss = document.getElementById("dotss");
-        var moreTextt = document.getElementById("moree");
-        var btnTextt = document.getElementById("myBtnn");
-
-        if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "More..."; 
-        moreText.style.display = "none";
-        } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Less"; 
-        moreText.style.display = "inline";
-        }
+          <div class="title" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <h1>Lovely Runner</h1>
+            <h4>2024 ‧ Fantasy . 1 season</h4>
+          </div>
+  
+          <aside>
+            <div id="main">
+              <div id="wrapper">
+                  <div><button class="active" id="prev" onclick="prev()"><i class="fa-solid fa-arrow-left"></i></button></div>
+                  <div id="image-container">
+                      <div id="image-carousel">
+                          <img src="../assets/img/ella/runner1.jpg" id="img"
+                              alt="">
+                          <img src="../assets/img/ella/runner2.jpg" id="img"
+                              alt="">
+                          <img src="../assets/img/ella/runner3.jpg" id="img"
+                              alt="">
+                          <img src="../assets/img/ella/runner4.jpg" id="img"
+                              alt="">
+                          <img src="../assets/img/ella/runner5.jpg" id="img"
+                              alt="">
+                          <img src="../assets/img/ella/runner6.jpg" id="img"
+                              alt="">
+                          
+                      </div>
+                  </div>
+                  <div><button class="active" id="next" onclick="next()"><i class="fa-solid fa-arrow-right"></i></button>
+                  </div>
+              </div>
+          </div>
       
-        if (dotss.style.display === "none") {
-          dotss.style.display = "inline";
-          btntbtnTextt.innerHTML = "More"; 
-          moreTextt.style.display = "none";
-        } else {
-          dotss.style.display = "none";
-          btnTextt.innerHTML = "Less"; 
-          moreTextt.style.display = "inline";
-        }
+          <script>
+            const wrapper = document.querySelector('#wrapper')
+  const carousel = document.querySelector('#image-carousel')
+  const images = document.querySelectorAll('#img')
+  const btn = document.querySelectorAll('button')
+  const previous = document.querySelector('#prev')
+  const nxt = document.querySelector('#next')
+  
+  
+  images.forEach((slide,index)=>{
+      slide.style.left = `${index * 100}%`
+  })
+  let counter = 0;
+  
+  const slideImage = ()=>{
+      images.forEach(
+          (e) => {
+              e.style.transform = `translateX(-${counter*100}%)`
+          }
+      )
+  }
+  
+  
+  
+  const prev = ()=>{
+      if(counter > 0){
+          
+          counter --;
+          slideImage();
+          console.log(counter);
+          
       }
-      </script>
-
-</section><hr>
-
-<section>
-  <h3 style="font-size: 35px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">More like this</h3>
-  <div class="movie-list-container">
-    <div class="movie-list-wrapper">
-      <div class="movie-list">
+  }
+  const next = ()=>{
+      if(counter <= (images.length - 2)){
+          
+          counter ++;
+          slideImage();
+          console.log(counter);
+          
+      }
+  }
+          </script>
+          </aside>
+  
+          
+  
+          <div class="div11">
+            <table style="border: 1px solid rgba(0, 0, 0, 0.144);
+            border-collapse: collapse;
+            padding: 20px 40px;
+            text-align: center;
+            width: 100%;
+            height: 150px; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+              <tr style="border: 1px solid rgba(0, 0, 0, 0.353);">
+               <th>IMDb<a href=""><i class="fa-brands fa-imdb" style="color: #fde50d;"></i></a></th>
+               <th style="border: 1px solid rgba(0, 0, 0, 0.353)">My Drama List<a href=""></a></th>
+               <th>viki<a href=""></a></th>
+              </tr>
+              <tr>
+               <td>8.7/10</td>
+               <td style="border: 1px solid rgba(0, 0, 0, 0.353);">9/10</td>
+               <td>9.8/10</td>
+              </tr>
+           </table>
+          </div>
+          <div class="div10" style="border: 10p solid black; padding: 20px 50px 20px 20px; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <p>Release date: April 8 - May 28, 2024<hr>
+              Director: Yoon Jong-ho, Kim Tae-yeop<hr>
+              Written by: Lee Shi-eun<hr>
+              Starring: Byron Woo Seok, Kim Hye Yoon<hr>
+              Genres: Time slip, Romantic comedy, Fantasy<hr>
+              original network: tvN<hr>
+              </p>
+          </div>
+  
+          <p style="font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Synopsis:</b> <span id="dots">&#x226B</span><button onclick="myFunction()" id="myBtn" style="font-size: 15px;">More...</button><br><span id="more" style="display: none; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><br>
+              Ryu Sun-Jae (Byeon Woo-Seok) is an idol who has achieved a lot of success since his debut.  But it was the entertainment industry that was giving him a lot of stress. 
+  
+              A girl named Im Sol (Kim Hye-Yoon) had to give up her dream after an accident when she was young. 
+             
+              At that time, Ryu Sun-Jae's songs on the radio gave her comfort.  This is the reason why she became a fan girl.
+             
+              One day, Im Sol is saddened to hear the news that Ryu Sun-Jae has died after taking sleeping pills. 
+             
+              After that, he mysteriously returns to 15 years ago and meets Ryu Sun-Jae, a 19-year-old high school student.  In this way, if Im Sol tries all kinds of things to save her idol 
+              Ryu Sun-Jae, let's see together how love will grow between the two...</span></p>
+  
+  <script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "More..."; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script><hr>
+  
+  <section style="height:auto; display: flex; justify-content: left; align-items: center;">
+    <div class="div12">
+      <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Official Trailer</b></h1>
+      <video controls style="margin: 20px; max-width: 100%; height: auto;">
+        <source src="../assets/img/ella/runnermv4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+  
+  <section class="movielink">
+  
+    <p style="font-size: 35px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Watch here</b> <span id="dotss"></span><button onclick="myFunction()" id="myBtnn" style="font-size: 15px;">&#x226B</button><br><span id="moree" style="display: none; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><br>
+      <a href="https://t.me/Moviesk018/153">Episode-1</a>
+      <a href="https://t.me/Moviesk018/153">Episode-2</a>
+      <a href="https://t.me/Moviesk018/153">Episode-3</a>
+      <a href="https://t.me/Moviesk018/153">Episode-4</a>
+      <a href="https://t.me/Moviesk018/153">Episode-5</a>
+      <a href="https://t.me/Moviesk018/153">Episode-6</a>
+      </span></p>
+  
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+          var dotss = document.getElementById("dotss");
+          var moreTextt = document.getElementById("moree");
+          var btnTextt = document.getElementById("myBtnn");
+  
+          if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "More..."; 
+          moreText.style.display = "none";
+          } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Less"; 
+          moreText.style.display = "inline";
+          }
+        
+          if (dotss.style.display === "none") {
+            dotss.style.display = "inline";
+            btnTextt.innerHTML = "More"; 
+            moreTextt.style.display = "none";
+          } else {
+            dotss.style.display = "none";
+            btnTextt.innerHTML = "Less"; 
+            moreTextt.style.display = "inline";
+          }
+        }
+        </script>
+  
+  </section><hr>
+  
+  <section>
+    <h3 style="font-size: 35px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">More like this</h3><br>
+    <div>
+      <div class="movie-list-wrapper">
+        <div class="movie-list">
+  
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="../assets/img/ella/twinklingcv.jpg" alt="romseries1"/>
+            <span class="movie-list-item-title">Twinkling Watermelon</span>
+            <p class="movie-list-item-desc">Episode - 16
+                <br>Directed by -  Kim Jeong-sik</br>
+                <br>Starring - Shin Min-a,
+                Kim Young-dae,
+                Lee Sang-yi,
+                Han Ji-hyun </br></p>
+                <button type="submit" class="movie-list-item-button"><a class ="a" href="./twinklingwatermelon.html" >Watch</a></button>    
+        </div>
 
         <div class="movie-list-item">
-          <img class="movie-list-item-img" src="../assets/img/ella/romseries1.jpg" alt="romseries1"/>
-          <span class="movie-list-item-title">No Gain No Love</span>
-          <p class="movie-list-item-desc">Episode - 16
-              <br>Directed by -  Kim Jeong-sik</br>
-              <br>Starring - Shin Min-a,
-              Kim Young-dae,
-              Lee Sang-yi,
-              Han Ji-hyun </br></p>
-              <button type="submit" class="movie-list-item-button"><a class ="a" href="./assets/img/videos/nogainnolove.mp4" target="_blank">Watch</a></button>    
+            <img class="movie-list-item-img" src="../assets/img/ella/classcv.jpg" alt="movie3"/>
+            <span class="movie-list-item-title">Itaewon Class</span>
+            <p class="movie-list-item-desc">Episode - 16
+                <br>Directed by -  Kim seong-yoon</br>
+                <br>Starring - Park Seo Joon, Kim Da Mi, Yoo Jae Myung, Kwon Hara. </br></p>
+                <button type="submit" class="movie-list-item-button"><a class ="a" href="./Itaewonclass.html" >Watch</a></button>  
+        </div>
+        
+        <div class="movie-list-item">
+         <img class="movie-list-item-img" src="../assets/img/ella/t5t1cv.jpg" alt="romseries8"/>
+         <span class="movie-list-item-title" style="font-size: 18px;">Twenty-Five Twenty-One</span>
+         <p class="movie-list-item-desc">Episode - 16
+             <br>Directed by - Jung Ji-hyun </br>
+             <br>Starring -Kim Tae Ri, Nam Joo Hyunk, Choi Hyun Wook, Lee Joo Myung.</br></p>
+             <button type="submit" class="movie-list-item-button"><a class ="a" href="./twentyfivetwentyone.html">Watch</a></button>  
         </div>
 
-       <div class="movie-list-item">
-          <img class="movie-list-item-img" src="../assets/img/ella/romseries2.jpg" alt="movie3"/>
-          <span class="movie-list-item-title">Love Next Door</span>
-          <p class="movie-list-item-desc">Episode - 16
-              <br>Directed by -  Yoo Je-won</br>
-              <br>Starring - Jung Hae-in,
-              Jung So-min.</br></p>
-              <button type="submit" class="movie-list-item-button"><a class ="a" href="./assets/img/videos/lovenextdoor.mp4" target="_blank">Watch</a></button>  
+        <div class="movie-list-item">
+         <img class="movie-list-item-img" src="../assets/img/ella/summercv.jpg" alt="romseries5"/>
+         <span class="movie-list-item-title">Our Beloved Summer</span>
+         <p class="movie-list-item-desc">Episode - 16
+             <br>Directed by -  Kim Yoon-jin</br>
+             <br>Starrig - Choi Woo Shik, Kim Da Mi, Kim Sung Cheol, Roh Jeoung Eui</br></p>
+             <button type="submit" class="movie-list-item-button"><a class ="a" href="./ourbelovedsummer.html" >Watch</a></button>    
+        </div>
+
+        <div class="movie-list-item">
+            <img class="movie-list-item-img" src="../assets/img/ella/mooncv.jpg" alt="drama3"/>
+            <span class="movie-list-item-title">Moon lover</span>
+            <p class="movie-list-item-desc">Episodes: 20
+            <br>Directed by - Kim Kyu-tae</br>
+            <br>Starring - Lee Joon-gi,
+                Lee Ji-eun,
+                Kang Ha-neul.</br></p>
+                <button type="submit" class="movie-list-item-button"><a class ="a" href="./moonlover.html">Watch</a></button>   
        </div>
 
-       <div class="movie-list-item">
-        <img class="movie-list-item-img" src="../assets/img/ella/romseries8.jpg" alt="romseries8"/>
-        <span class="movie-list-item-title">Dear Hyeri</span>
-        <p class="movie-list-item-desc">Episode - 16
-            <br>Directed by - ung Ji-hyun, Heo Seok-won </br>
-            <br>Starring -Shin Hye-sun,
-            Lee Jin-wook,
-            Kang Hoon,
-            Jo Hye-joo.</br></p>
-            <button type="submit" class="movie-list-item-button"><a class ="a" href="../assets/img/videos/dearheyri.mp4" target="_blank">Watch</a></button>  
+        <div class="movie-list-item">
+         <img class="movie-list-item-img" src="../assets/img/ella/mrqueencv.jpg" alt="romseries7"/>
+         <span class="movie-list-item-title">Master Queen</span>
+         <p class="movie-list-item-desc">Episode - 20
+             <br>Directed by - Yoon Sung-sik </br>
+             <br>Starring -Shin Hye Sun, Kim Jung Hyun, Bae Jong Ok, Kim Tae Woo, Seoul In Ah, Na In Woo.</br></p>
+             <button type="submit" class="movie-list-item-button"><a class ="a" href="./Mrqueen.html">Watch</a></button>  
+        </div>
+
+        <div class="movie-list-item">
+            <img class="movie-list-item-img" src="../assets/img/ella/globincv1.jfif" alt="romseries7"/>
+            <span class="movie-list-item-title">Globin</span>
+            <p class="movie-list-item-desc">Episode - 16
+                <br>Directed by - Lee Eung-bok, Kwon Hyuk-chan, Yoon Jong-ho</br>
+                <br>Starring - Gong Yoo, Kim Go Eun, Lee Dong Wook, Yoo In na, Yook Sung Jae.</br></p>
+                <button type="submit" class="movie-list-item-button"><a class ="a" href="./goblin.html">Watch</a></button>  
+           </div>
+  
        </div>
-
-       <div class="movie-list-item">
-        <img class="movie-list-item-img" src="../assets/img/ella/romseries6.jpg" alt="romseries6"/>
-        <span class="movie-list-item-title">Queen of tears</span>
-        <p class="movie-list-item-desc">Episode - 16
-            <br>Directed by - Jang Young-woo, Kim Hee-won</br>
-            <br>Starring -Kim Soo-hyun ,
-            Kim Ji-won.</br></p>
-            <button type="submit" class="movie-list-item-button"><a class ="a" href="./assets/img/videos/queenoftear.mp4" target="_blank">Watch</a></button>  
-       </div>
-
-       <div class="movie-list-item">
-        <img class="movie-list-item-img" src="../assets/img/ella/romseries7.jpg" alt="romseries7"/>
-        <span class="movie-list-item-title">Doctor Slump</span>
-        <p class="movie-list-item-desc">Episode - 16
-            <br>Directed by - Oh Hyun-jong </br>
-            <br>Starring -Park Hyung-sik,
-            Park Shin-hye,
-            Yoon Park,
-            Gong Seong-ha.</br></p>
-            <button type="submit" class="movie-list-item-button"><a class ="a" href="./assets/img/videos/doctorslump.mp4" target="_blank">Watch</a></button>  
-       </div>
-
-     </div>
-     <i class="fas fa-chevron-left leftarrow"></i>
-     <i class="fas fa-chevron-right rightarrow"></i>
-
-   </div>
-</section>
-
-
-        <!-- Start Card Section -->
-            <!-- <div class="container-fluid">
-                <div class="d-flex flex-wrap justify-content-center">
-                    <div class="filters"><a href="./assets/img/thwinchel/movie1.jpg"><img src="./assets/img/thwinchel/movie1.jpg" width="200" alt="movie1"/></a></div>
-                    <div class="filters"><a href="./assets/img/thwinchel/movie2.jpg"><img src="./assets/img/thwinchel/movie2.jpg" width="200" alt="movie2"/></a></div>
-                    <div class="filters"><a href="./assets/img/thwinchel/movie3.jpg"><img src="./assets/img/thwinchel/movie3.jpg" width="200" alt="movie3"/></a></div>
-                    <div class="filters"><a href="./assets/img/thwinchel/movie4.jpg"><img src="./assets/img/thwinchel/movie4.jpg" width="200" alt="movie4"/></a></div>
-                    <div class="filters"><a href="./assets/img/thwinchel/movie5.jpg"><img src="./assets/img/thwinchel/movie5.jpg" width="200" alt="movie5"/></a></div>
-                    <div class="filters"><a href="./assets/img/thwinchel/movie6.jpg"><img src="./assets/img/thwinchel/movie6.jpg" width="200" alt="movie6"/></a></div>
-                    <div class="filters"><a href="./assets/img/thwinchel/movie7.jpg"><img src="./assets/img/thwinchel/movie7.jpg" width="200" alt="movie7"/></a></div>
-                    <div class="filters"><a href="./assets/img/thwinchel/movie8.jpg"><img src="./assets/img/thwinchel/movie8.jpg" width="200" alt="movie8"/></a></div>
-                    <div class="filters"><a href="./assets/img/thwinchel/movie9.jpg"><img src="./assets/img/thwinchel/movie9.jpg" width="200" alt="movie9"/></a></div>
-                    <div class="filters"><a href="./assets/img/thwinchel/movie10.jpg"><img src="./assets/img/thwinchel/movie10.jpg" width="200" alt="movie10"/></a></div>
-                    <div class="filters"><a href="./assets/img/thwinchel/rommovie1.jpg"><img src="./assets/img/thwinchel/rommovie1.jpg" width="200" alt="rommovie1"/></a></div>
-                    <div class="filters"><a href="./assets/img/thwinchel/romseries1.jpg"><img src="./assets/img/thwinchel/romseries1.jpg" width="200" alt="romseries1"/></a></div>
-                </div>
-            </div> -->
-        <!-- End Card Section -->
-        
-        <!-- Start Subscribe Section -->
-        <!--<section class="subscribes">
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-5  pb-4" >
-                        <h5 class="display-4 mb-3 fw-bold">Subscribe to Our Website</h5>
-
-                        <form action="" method="">
-
-                            <div class="input-group mb-2">
-                                <i class="fa fa-user input-group-text"></i>
-                                <input type="text" name="regusername" id="regusername" class="form-control" placeholder="Username"/>
+       <i class="fas fa-chevron-left leftarrow"></i>
+       <i class="fas fa-chevron-right rightarrow"></i>
+  
+     </div><br><br>
+  </section>
+  
+  
+          <!-- Start Card Section -->
+              <!-- <div class="container-fluid">
+                  <div class="d-flex flex-wrap justify-content-center">
+                      <div class="filters"><a href="./assets/img/thwinchel/movie1.jpg"><img src="./assets/img/thwinchel/movie1.jpg" width="200" alt="movie1"/></a></div>
+                      <div class="filters"><a href="./assets/img/thwinchel/movie2.jpg"><img src="./assets/img/thwinchel/movie2.jpg" width="200" alt="movie2"/></a></div>
+                      <div class="filters"><a href="./assets/img/thwinchel/movie3.jpg"><img src="./assets/img/thwinchel/movie3.jpg" width="200" alt="movie3"/></a></div>
+                      <div class="filters"><a href="./assets/img/thwinchel/movie4.jpg"><img src="./assets/img/thwinchel/movie4.jpg" width="200" alt="movie4"/></a></div>
+                      <div class="filters"><a href="./assets/img/thwinchel/movie5.jpg"><img src="./assets/img/thwinchel/movie5.jpg" width="200" alt="movie5"/></a></div>
+                      <div class="filters"><a href="./assets/img/thwinchel/movie6.jpg"><img src="./assets/img/thwinchel/movie6.jpg" width="200" alt="movie6"/></a></div>
+                      <div class="filters"><a href="./assets/img/thwinchel/movie7.jpg"><img src="./assets/img/thwinchel/movie7.jpg" width="200" alt="movie7"/></a></div>
+                      <div class="filters"><a href="./assets/img/thwinchel/movie8.jpg"><img src="./assets/img/thwinchel/movie8.jpg" width="200" alt="movie8"/></a></div>
+                      <div class="filters"><a href="./assets/img/thwinchel/movie9.jpg"><img src="./assets/img/thwinchel/movie9.jpg" width="200" alt="movie9"/></a></div>
+                      <div class="filters"><a href="./assets/img/thwinchel/movie10.jpg"><img src="./assets/img/thwinchel/movie10.jpg" width="200" alt="movie10"/></a></div>
+                      <div class="filters"><a href="./assets/img/thwinchel/rommovie1.jpg"><img src="./assets/img/thwinchel/rommovie1.jpg" width="200" alt="rommovie1"/></a></div>
+                      <div class="filters"><a href="./assets/img/thwinchel/romseries1.jpg"><img src="./assets/img/thwinchel/romseries1.jpg" width="200" alt="romseries1"/></a></div>
+                  </div>
+              </div> -->
+          <!-- End Card Section -->
+          
+          <!-- Start Subscribe Section -->
+          <!--<section class="subscribes">
+  
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-5  pb-4" >
+                          <h5 class="display-4 mb-3 fw-bold">Subscribe to Our Website</h5>
+  
+                          <form action="" method="">
+  
+                              <div class="input-group mb-2">
+                                  <i class="fa fa-user input-group-text"></i>
+                                  <input type="text" name="regusername" id="regusername" class="form-control" placeholder="Username"/>
+                              </div>
+  
+                              <div class="input-group mb-2">
+                                  <i class="fa fa-envelope input-group-text"></i>
+                                  <input type="email" name="regemail" id="regemail" class="form-control" placeholder="Email"/>
+                              </div>
+  
+                              <div class="input-group mb-2">
+                                  <i class="fa fa-key input-group-text"></i>
+                                  <input type="password" name="regpassword" id="regpassword" class="form-control" placeholder="password"/>
+                             </div>
+  
+                            <div class="form-check form-switch">
+                                  <input type="checkbox" name="accept" id="accept" class="form-check-input"/>
+                                  <label for="accept">I agreed to get push notify.</label>
                             </div>
-
-                            <div class="input-group mb-2">
-                                <i class="fa fa-envelope input-group-text"></i>
-                                <input type="email" name="regemail" id="regemail" class="form-control" placeholder="Email"/>
+  
+                            <div class="d-grid">
+                                  <button type="submit" class="btn btn-primary fw-bold text-uppercase rounded-0 p-2">Subscribe Now</button>
                             </div>
-
-                            <div class="input-group mb-2">
-                                <i class="fa fa-key input-group-text"></i>
-                                <input type="password" name="regpassword" id="regpassword" class="form-control" placeholder="password"/>
-                           </div>
-
-                          <div class="form-check form-switch">
-                                <input type="checkbox" name="accept" id="accept" class="form-check-input"/>
-                                <label for="accept">I agreed to get push notify.</label>
+                          </form>
+                      </div>
+  
+                      <div class="col-md-7 squareareas" >
+                          
+                          <div class="sqboxes">
+                              <div class="square"></div>
+                              <div class="square"></div>
+                              <div class="square"></div>
+                              <div class="square"></div>
+                              <div class="square"></div>
+                              <div class="square"></div>
+                              <div class="square"></div>
+                              <div class="square"></div>
+                              <div class="square"></div>
+                              <div class="square"></div>
                           </div>
-
-                          <div class="d-grid">
-                                <button type="submit" class="btn btn-primary fw-bold text-uppercase rounded-0 p-2">Subscribe Now</button>
-                          </div>
-                        </form>
-                    </div>
-
-                    <div class="col-md-7 squareareas" >
-                        
-                        <div class="sqboxes">
-                            <div class="square"></div>
-                            <div class="square"></div>
-                            <div class="square"></div>
-                            <div class="square"></div>
-                            <div class="square"></div>
-                            <div class="square"></div>
-                            <div class="square"></div>
-                            <div class="square"></div>
-                            <div class="square"></div>
-                            <div class="square"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-        <!-- End Subscribe Section -->
-
-
-
-        <!-- Start Footer Section -->
-         <footer class="bg-dark px-5">
-            <div class="container-fluid">
-                
-                <div class="row text-light py-4">
-                    <div class="col-lg-3 col-sm-6">
-                        <h6 class="mb-3">Infomation</h6>
-                        <ul class="list-unstyled">
-                            <li><a href="javascript:void(0); " class="footerlinks">Home</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">AboutUs</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Trendings</a></li>
+                      </div>
+                  </div>
+              </div>
+          </section>-->
+          <!-- End Subscribe Section -->
+  
+  
+  
+          <!-- Start Footer Section -->
+           <footer class="bg-dark px-5">
+              <div class="container-fluid">
+                  
+                  <div class="row text-light py-4">
+                      <div class="col-lg-3 col-sm-6">
+                          <h6 class="mb-3">Infomation</h6>
+                          <ul class="list-unstyled">
+                            <li><a href="../index.html " class="footerlinks">Home</a></li>
+                            <li><a href="./aboutus.html " class="footerlinks">AboutUs</a></li>
+                            <li><a href="./trendings.html " class="footerlinks">Trendings</a></li>
                             <li><a href="javascript:void(0); " class="footerlinks">Movies</a></li>
                             <li><a href="javascript:void(0); " class="footerlinks">Series</a></li>
                             <li><a href="javascript:void(0); " class="footerlinks">Top Rated</a></li>
-                        </ul>
-                    </div>
-                   
-                    <div class="col-lg-3 col-sm-6">
-                        <h6 class="mb-3">Customer Help</h6>
-                        <ul class="list-unstyled">
-                            <li><a href="javascript:void(0); " class="footerlinks">F.A.Q.S</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Search Course</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Latest Information</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Specialist Info</a></li>              
-                        </ul>
-                        <div class="footersocialicons">
-                            <a href="javascript:void(0);"  target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="javascript:void(0); " target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="javascript:void(0); " target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="javascript:void(0); " target="_blank"><i class="fab fa-linkedin-in"></i></a>         
-                        </div>
-                    </div>
+                         </ul>
+                      </div>
+                     
+                      <div class="col-lg-3 col-sm-6">
+                          <h6 class="mb-3">Customer Help</h6>
+                          <ul class="list-unstyled">
+                              <li><a href="javascript:void(0); " class="footerlinks">F.A.Q.S</a></li>
+                              <li><a href="javascript:void(0); " class="footerlinks">Search Course</a></li>
+                              <li><a href="javascript:void(0); " class="footerlinks">Latest Information</a></li>
+                              <li><a href="javascript:void(0); " class="footerlinks">Specialist Info</a></li>              
+                          </ul>
+                          <div class="footersocialicons">
+                              <a href="javascript:void(0);"  target="_blank"><i class="fab fa-facebook-f"></i></a>
+                              <a href="javascript:void(0); " target="_blank"><i class="fab fa-instagram"></i></a>
+                              <a href="javascript:void(0); " target="_blank"><i class="fab fa-twitter"></i></a>
+                              <a href="javascript:void(0); " target="_blank"><i class="fab fa-linkedin-in"></i></a>         
+                          </div>
+                      </div>
+  
+                      
+                      <div class="col-lg-3 col-sm-6">
+                          <h6 class="mb-3">We Accept</h6>
+                          <ul class="list-unstyled">
+                              <li><a href="javascript:void(0); " class="footerlinks">Wire Transfer</a></li>
+                              <li><a href="javascript:void(0); " class="footerlinks">Online Payments</a></li>
+                              <li><a href="javascript:void(0); " class="footerlinks">VIA Payments By Embassy</a></li>     
+                          </ul>
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/icons8-visa-48.png" alt="visacard" /></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/mastercard.png" alt="mastercard" style="width: 48px; height: 48px;" /></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/americancard.png" alt="americancard" style="width: 48px; height: 48px;" /></a></li>   
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/icons8-bank-cards-48.png" alt="card" /></a></li> 
+                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/discoverycard.png" alt="descoverycard" /></a></li>             
+                          </ul>
+                      </div>
+                  </div>
+              
+                  <div class="container">
+                      <div class="text-light d-flex justify-content-between border-top pt-4">
+                          <p>Copyright &copy; <span id="getyear"></span><a href="javascript:void(0);"> Pro </a> "Let's Fight Together Team" All rights reserved.</p>
+                      </div>
+                  </div>   
+              </div>
+           </footer>
+          <!-- End Footer Section -->
 
-                    
-                    <div class="col-lg-3 col-sm-6">
-                        <h6 class="mb-3">We Accept</h6>
-                        <ul class="list-unstyled">
-                            <li><a href="javascript:void(0); " class="footerlinks">Wire Transfer</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Online Payments</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">VIA Payments By Embassy</a></li>     
-                        </ul>
-                        <ul class="list-inline">
-                          <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/icons8-visa-48.png" alt="visacard" /></a></li>
-                          <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/mastercard.png" alt="mastercard" style="width: 48px; height: 48px;" /></a></li>
-                          <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/americancard.png" alt="americancard" style="width: 48px; height: 48px;" /></a></li>   
-                          <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/icons8-bank-cards-48.png" alt="card" /></a></li> 
-                          <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/discoverycard.png" alt="descoverycard" /></a></li>             
-                        </ul>
-                    </div>
-                </div>
-            
-                <div class="container">
-                    <div class="text-light d-flex justify-content-between border-top pt-4">
-                        <p>Copyright &copy; <span id="getyear"></span><a href="javascript:void(0);"> Pro </a> "Let's Fight Together Team" All rights reserved.</p>
-                    </div>
-                </div>   
-            </div>
-         </footer>
-        <!-- End Footer Section -->
+        </div>
 
          <!--bootstrap css1 js1-->
            <script src="../assets/libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>

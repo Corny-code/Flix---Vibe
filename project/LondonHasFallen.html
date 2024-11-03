@@ -168,71 +168,71 @@ button{
         
     </head>
 
-    <body class="subscribes" >
-        <!-- Start Back To Top  -->
-          <div class="fixed-bottom">
-              <a href="#" class="btn-backtotops"><i class="fas fa-arrow-up"></i></a>
-          </div>
-        <!-- End Back To Top  -->
-        
-        <!---Start Header Section--->
-          <header>
-             <!---Start Nav Bar-->
-              <nav class="navbar navbar-expand-md fixed-top" style="height: 100px;">
-                <a href`="index.html" class="navbar-brand text-light mx-3">
-                   <img src="../assets/img/shinnobu/logo2-removebg-preview.png" width="100px" alt="favicon" style="border-radius: 50%; margin: 70px 0 70px 0;"/>
-                   <span class="text-uppercase h3 fw-bold mx-4" style="font-family: 'Times New Roman', Times, serif; font-size: 50px;">Flix<span class="h3" style="font-family: 'Times New Roman', Times, serif; font-size: 50px;"> Vibe</span></span>
-                </a>
+    <body class="subscribes">
+      <!-- Start Back To Top  -->
+        <div class="fixed-bottom">
+            <a href="#" class="btn-backtotops"><i class="fas fa-arrow-up"></i></a>
+        </div>
+      <!-- End Back To Top  -->
+      
+      <!---Start Header Section--->
+        <header>
+           <!---Start Nav Bar-->
+            <nav class="navbar navbar-expand-md fixed-top" style="height: 100px;">
+              <a href`="index.html" class="navbar-brand text-light mx-3">
+                 <img src="../assets/img/shinnobu/logo2-removebg-preview.png" width="100px" alt="favicon" style="border-radius: 50%; margin-bottom: 5px;"/>
+                 <span class="text-uppercase h3 fw-bold mx-4" style="font-family: 'Times New Roman', Times, serif; font-size: 50px;">Flix<span class="h3" style="font-family: 'Times New Roman', Times, serif; font-size: 50px;"> Vibe</span></span>
+              </a>
 
-                <button type="button" class="navbar-toggler navbuttons " data-bs-toggle="collapse" data-bs-target="#nav">
-                   <div class="bg-light lines1"></div>
-                   <div class="bg-light lines2"></div>
-                   <div class="bg-light lines3"></div>
-                </button>
+              <button type="button" class="navbar-toggler navbuttons " data-bs-toggle="collapse" data-bs-target="#nav">
+                 <div class="bg-light lines1"></div>
+                 <div class="bg-light lines2"></div>
+                 <div class="bg-light lines3"></div>
+              </button>
 
-                <div id="nav" class="navbar-collapse collapse justify-content-end text-uppercase fw-bold">
-                   <ul class="navbar-nav">
-                      <li class="nav-item"><a href="../index.html" class="nav-link mx-2 menuitems menulists" data-filter="home">Home</a></li>
-                      <li class="nav-item"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists" data-filter="aboutus" >About Us</a></li>
-                      <li class="nav-item dropdown"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists dropdown-toggle" data-filter="movies" data-bs-toggle="dropdown">Gendres</a>
-                          <ul class="dropdown-menu">
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="action">Action</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="horror">Horror</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="romantic">Romantic</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="drama">Drama</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="funny">Funny</a></li>
-                              <li><a href="javascript:void(0);" class="dropdown-item" data-filter="animation">Animation</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists" data-filter="toprated">Trendings</a></li>
-                   </ul>
+              <div id="nav" class="navbar-collapse collapse justify-content-end text-uppercase fw-bold">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a href="../index.html" class="nav-link mx-2 menuitems menulists" data-filter="home">Home</a></li>
+                  <li class="nav-item"><a href="./aboutus.html" class="nav-link mx-2 menuitems menulists" data-filter="aboutus" >About Us</a></li>
+                  <li class="nav-item dropdown"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists dropdown-toggle" data-filter="movies" data-bs-toggle="dropdown">Gendres</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="./action.html" class="dropdown-item" data-filter="action">Action</a></li>
+                        <li><a href="./horror.html" class="dropdown-item" data-filter="horror">Horror</a></li>
+                        <li><a href="./animation.html" class="dropdown-item" data-filter="animation">Animation</a></li>
+                        <li><a href="./drama.html" class="dropdown-item" data-filter="drama">Drama(Korea)</a></li>
+                        <li><a href="./drama1.html" class="dropdown-item" data-filter="funny">Drama(Thailand)</a></li>
+                        <li><a href="./chinese.html" class="dropdown-item" data-filter="animation">Series(Chinese)</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item"><a href="./trendings.html" class="nav-link mx-2 menuitems menulists" data-filter="toprated">Trendings</a></li>
+               </ul>
+              </div>
+              <div class="wrapper">
+                <div class="search-input">
+                    <filter href="" target="_self" hidden></filter>
+                    <input type="text" id="search" placeholder="Search...">
+                    <div class="autocom-box"></div>
+                    <div class="icon" onclick="searchPages()"><i class=" fas fa-search"></i></div>
                 </div>
-                <div class="wrapper">
-                  <div class="search-input">
-                      <a href="" target="_blank" hidden></a>
-                      <input type=" text" placeholder="Search...">
-                      <div class="autocom-box"></div>
-                      <div class="icon"><i class=" fas fa-search"></i></div>
-                  </div>
-                </div>  
-                <div class="toggle">
-                  <i class="fas fa-sun toggle-icon"></i>
-                  <i class="fas fa-moon toggle-icon"></i>
-                  <div class="toggle-ball"></div>
-                </div>
-              </nav>
-             <!--End Nav Bar-->
+              </div>  
+              <div class="toggle">
+                <i class="fas fa-sun toggle-icon"></i>
+                <i class="fas fa-moon toggle-icon"></i>
+                <div class="toggle-ball"></div>
+              </div>
+            </nav>
+           <!--End Nav Bar-->
 
-             <!--Start Banner-->
-             <div class="text-light text-center text-md-end text-sm-center banners" style="font-family: 'Times New Roman', Times, serif;">
-              <h1 class="display-4 bannerheaders auto">Welcome to <span class="display-3 text-uppercase auto" style="font-family: 'Times New Roman', Times, serif;">Flix Vibe</span> Movies Theater</h1>
-              <p class="lead bannerparagraphs auto">Your pleasure is our pleasure, ENJOY your golden time.</p>
-           </div>
-         <!---End Banner--->
-            
-          </header>
+           <!--Start Banner-->
+           <div class="text-light text-center text-md-end text-sm-center banners" style="font-family: 'Times New Roman', Times, serif;">
+            <h1 class="bannerheaders auto">Welcome to <span class="display-3 text-uppercase auto" style="font-family: 'Times New Roman', Times, serif;">Flix Vibe</span> Movies Theater</h1>
+            <p class="lead bannerparagraphs auto">Your pleasure is our pleasure, ENJOY your golden time.</p>
+         </div>
+       <!---End Banner--->
+          
+        </header>
 
-        <!---End Header Section----->
+      <!---End Header Section----->
         
         <div class="title" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
           <h1> London Has Fallen </h1>
@@ -245,15 +245,15 @@ button{
                 <div><button class="active" id="prev" onclick="prev()"><i class="fa-solid fa-arrow-left"></i></button></div>
                 <div id="image-container">
                     <div id="image-carousel">
-                        <img src="../assets/img/thomaswalker/lhf1.jfif"
+                        <img src="../assets/img/thomaswalker/lhf1.jfif" id="img"
                             alt="">
-                        <img src="../assets/img/thomaswalker/lhf2.jfif"
+                        <img src="../assets/img/thomaswalker/lhf2.jfif" id="img"
                             alt="">
-                        <img src="../assets/img/thomaswalker/lhf3.jfif"
+                        <img src="../assets/img/thomaswalker/lhf3.jfif" id="img"
                             alt="">
-                        <img src="../assets/img/thomaswalker/lhf4.jfif"
+                        <img src="../assets/img/thomaswalker/lhf4.jfif" id="img"
                             alt="">
-                        <img src="../assets/img/thomaswalker/lhf5.jfif"
+                        <img src="../assets/img/thomaswalker/lhf5.jfif" id="img"
                             alt="">
                         
                     </div>
@@ -266,7 +266,7 @@ button{
         <script>
           const wrapper = document.querySelector('#wrapper')
 const carousel = document.querySelector('#image-carousel')
-const images = document.querySelectorAll('img')
+const images = document.querySelectorAll('#img')
 const btn = document.querySelectorAll('button')
 const previous = document.querySelector('#prev')
 const nxt = document.querySelector('#next')
@@ -319,8 +319,8 @@ const next = ()=>{
           height: 150px; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
             <tr style="border: 1px solid rgba(0, 0, 0, 0.353);">
              <th>IMDb<a href=""><i class="fa-brands fa-imdb" style="color: #fde50d;"></i></a></th>
-             <th style="border: 1px solid rgba(0, 0, 0, 0.353)">Rotten Tomatoes<a href=""><i class="fa-brands fa-tomato" style="color: #fde50d;"></i></a></th>
-             <th>Metacritic<a href=""><i class="fa-brands fa-facebook" style="color: #fde50d;"></i></a></th>
+             <th style="border: 1px solid rgba(0, 0, 0, 0.353)">Rotten Tomatoes<a href=""></a></th>
+             <th>Metacritic<a href=""></a></th>
             </tr>
             <tr>
              <td>5.9/10</td>
@@ -366,11 +366,13 @@ function myFunction() {
 }
 </script><hr>
 
-<section style="height: 550px;">
+<section style="height:auto; display: flex; justify-content: left; align-items: center;">
   <div class="div12">
     <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Official Trailer</b></h1>
-    <video controls style=" justify-content: center; margin: 0 50px 50px 50px; width: 650px; height: 450px;"><source src="../assets/img/thomaswalker/lhfmv.mp4"></video>
-    
+    <video controls style="margin: 20px; max-width: 100%; height: auto;">
+      <source src="../assets/img/thomaswalker/lhfmv.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 </section>
 
@@ -384,91 +386,68 @@ function myFunction() {
     <div class="movie-list-wrapper">
       <div class="movie-list">
         <div class="movie-list-item">
-          <img class="movie-list-item-img" src="../assets/img/thomaswalker/dpcv.jpg" alt="movie10"/>
-          <span class="movie-list-item-title">Deadpool</span>
-          <p class="movie-list-item-desc">Running time - 2h 8m
-             <br>Directed by - Shawn Levy Levy
-                 Starring - Ryan Reynolds, Hugh Jackman, Emma Corrin</br></p>
-                 <button type="submit" class="movie-list-item-button"><a class ="a" href="./assets/img/videos/deadpool.mp4" target="_blank">Watch</a></button>  
-          
-          
-        </div>
-
-        <div class="movie-list-item">
-           <img class="movie-list-item-img" src="../assets/img/thomaswalker/action2.jpg" alt="movie2"/>
-           <span class="movie-list-item-title">The Old Guard</span>
-           <p class="movie-list-item-desc">Running time - 1h 36m
-               <br>Directed by - Gina Prince-Bythewood
-               Starring - Charlize Theron,
-               KiKi Layne,
-               Marwan Kenzari</br></p>
-               <button type="submit" class="movie-list-item-button"><a class ="a" href="../assets/img/videos/theoldguard.mp4" target="_blank">Watch</a></button>  
-       </div>
-
-      <div class="movie-list-item">
-          <img class="movie-list-item-img" src="../assets/img/thomaswalker/action3.jpg" alt="movie3"/>
-          <span class="movie-list-item-title" style=" font-size: 16px;">Mission:Impossible FALLOUT</span>
+          <img class="movie-list-item-img" src="../assets/img/thomaswalker/action2.jpg" alt="movie2"/>
+          <span class="movie-list-item-title">The Old Guard</span>
           <p class="movie-list-item-desc">Running time - 1h 36m
-              <br>Directed by - Christopher McQuarrie
-              Starring - Tom Cruise
-              Henry Cavill,
-              Ving Rhames.</br></p>
-              <button type="submit" class="movie-list-item-button"><a class ="a" href="../assets/img/videos/fallout.mp4" target="_blank">Watch</a></button>     
+              <br>Directed by - Gina Prince-Bythewood
+              Starring - Charlize Theron,
+              KiKi Layne,
+              Marwan Kenzari</br></p>
+              <button type="submit" class="movie-list-item-button"><a class ="a" href="./Theoldguard.html" >Watch</a></button>  
       </div>
 
-      <div class="movie-list-item">
-          <img class="movie-list-item-img" src="../assets/img/thomaswalker/action4.jpg" alt="movie4"/>
-          <span class="movie-list-item-title">Pathaan</span>
-          <p class="movie-list-item-desc">Running time - 1h 36m
-              <br>Directed by - Siddharth Anand
-              Starring - Shah Rukh Khan,
-              Deepika Padukone,
-              John Abraham.</br></p>
-              <button type="submit" class="movie-list-item-button"><a class ="a" href="../assets/img/videos/pathaan.mp4" target="_blank">Watch</a></button>  
-      </div>
+     <div class="movie-list-item">
+         <img class="movie-list-item-img" src="../assets/img/thomaswalker/action3.jpg" alt="movie3"/>
+         <span class="movie-list-item-title" style=" font-size: 16px;">Mission:Impossible FALLOUT</span>
+         <p class="movie-list-item-desc">Running time - 1h 36m
+             <br>Directed by - Christopher McQuarrie
+             Starring - Tom Cruise
+             Henry Cavill,
+             Ving Rhames.</br></p>
+             <button type="submit" class="movie-list-item-button"><a class ="a" href="./MissionImpossible.html" >Watch</a></button>     
+     </div>
 
-      <div class="movie-list-item">
-          <img class="movie-list-item-img" src="../assets/img/thomaswalker/action5.jpg" alt="movie5"/>
-          <span class="movie-list-item-title">Vanguard</span>
-          <p class="movie-list-item-desc">Running time - 1h 36m
-              <br>Directed by - Stanley Tong
-              Starrig - Jackie Chan
-              Yang Yang,
-              Ai Lun,
-              Miya Muqi.</br></p>
-              <button type="submit" class="movie-list-item-button"><a class ="a" href="../assets/img/videos/vanguard.mp4" target="_blank">Watch</a></button>      
-      </div>
+     <div class="movie-list-item">
+         <img class="movie-list-item-img" src="../assets/img/thomaswalker/action4.jpg" alt="movie4"/>
+         <span class="movie-list-item-title">Pathaan</span>
+         <p class="movie-list-item-desc">Running time - 1h 36m
+             <br>Directed by - Siddharth Anand
+             Starring - Shah Rukh Khan,
+             Deepika Padukone,
+             John Abraham.</br></p>
+             <button type="submit" class="movie-list-item-button"><a class ="a" href="./Pathaan.html" >Watch</a></button>  
+     </div>
 
-      <div class="movie-list-item">
-       <img class="movie-list-item-img" src="../assets/img/thomaswalker/triplrthreadcv.jpg" alt="movie5"/>
-       <span class="movie-list-item-title">Triple Threat</span>
-       <p class="movie-list-item-desc">Running time - 1h 36m
-           <br>Directed by -Jesse V. Johnson
-           Starring -Tony Jaa,
-           Hu Chen,
-            Iko Uwais,
-            Scott Adkins.</br></p>
-           <button type="submit" class="movie-list-item-button"><a class ="a" href="../project/TripleThreat.html" target="_blank">Watch</a></button>      
-      </div>
+     <div class="movie-list-item">
+      <img class="movie-list-item-img" src="../assets/img/thomaswalker/action7.jpg" alt="movie7"/>
+      <span class="movie-list-item-title">BadLand Hunters</span>
+      <p class="movie-list-item-desc">Running time - 1h 36m
+          <br>Directed by - Heo Myung-haeng
+          Starring - Ma Dong-seok,
+          Lee Hee-joon,
+          Lee Jun-young,
+          Roh Jeong-eui.</br></p>
+          <button type="submit" class="movie-list-item-button"><a class ="a" href="./BadlandHunters.html">Watch</a></button>  
+     </div>
 
-      <div class="movie-list-item">
-        <img class="movie-list-item-img" src="../assets/img/thomaswalker/action7.jpg" alt="movie7"/>
-        <span class="movie-list-item-title">BadLand Hunters</span>
-        <p class="movie-list-item-desc">Running time - 1h 36m
-            <br>Directed by - Heo Myung-haeng
-            Starring - Ma Dong-seok,
-            Lee Hee-joon,
-            Lee Jun-young,
-            Roh Jeong-eui.</br></p>
-            <button type="submit" class="movie-list-item-button"><a class ="a" href="../assets/img/videos/badland.mp4" target="_blank">Watch</a></button>  
-      </div>
+     <div class="movie-list-item">
+      <img class="movie-list-item-img" src="../assets/img/thomaswalker/triplrthreadcv.jpg" alt="movie5"/>
+      <span class="movie-list-item-title">Triple Threat</span>
+      <p class="movie-list-item-desc">Running time - 1h 36m
+          <br>Directed by -Jesse V. Johnson
+          Starring -Tony Jaa,
+          Hu Chen,
+           Iko Uwais,
+           Scott Adkins.</br></p>
+          <button type="submit" class="movie-list-item-button"><a class ="a" href="../project/TripleThreat.html" >Watch</a></button>      
+  </div>
 
      </div>
      <i class="fas fa-chevron-left leftarrow"></i>
      <i class="fas fa-chevron-right rightarrow"></i>
 
-   </div>
-</section><br><br>
+   </div><br><br>
+</section>
 
 
         <!-- Start Card Section -->
@@ -556,12 +535,12 @@ function myFunction() {
                     <div class="col-lg-3 col-sm-6">
                         <h6 class="mb-3">Infomation</h6>
                         <ul class="list-unstyled">
-                            <li><a href="javascript:void(0); " class="footerlinks">Home</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">AboutUs</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Trendings</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Movies</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Series</a></li>
-                            <li><a href="javascript:void(0); " class="footerlinks">Top Rated</a></li>
+                          <li><a href="../index.html " class="footerlinks">Home</a></li>
+                          <li><a href="./aboutus.html " class="footerlinks">AboutUs</a></li>
+                          <li><a href="./trendings.html " class="footerlinks">Trendings</a></li>
+                          <li><a href="./available.html " class="footerlinks">Movies</a></li>
+                          <li><a href="./available.html " class="footerlinks">Series</a></li>
+                          <li><a href="./available.html " class="footerlinks">Top Rated</a></li>
                         </ul>
                     </div>
                    
@@ -590,11 +569,11 @@ function myFunction() {
                             <li><a href="javascript:void(0); " class="footerlinks">VIA Payments By Embassy</a></li>     
                         </ul>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/icons8-visa-48.png" alt="visacard" /></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="./assets/img/sthwinchel/payment/mastercard.png" alt="mastercard" /></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="./assets/img/thwinchel/payment/americancard.png" alt="americancard" /></a></li>   
-                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="./assets/img/thwinchel/payment/card.png" alt="card" /></a></li> 
-                            <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="./assets/img/thwinchel/payment/descoverycard.png" alt="descoverycard" /></a></li>             
+                          <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/icons8-visa-48.png" alt="visacard" /></a></li>
+                          <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/mastercard.png" alt="mastercard" style="width: 48px; height: 48px;" /></a></li>
+                          <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/americancard.png" alt="americancard" style="width: 48px; height: 48px;" /></a></li>   
+                          <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/icons8-bank-cards-48.png" alt="card" /></a></li> 
+                          <li class="list-inline-item"><a href="javascript:void(0); " class="footerlinks"><img src="../assets/img/shinnobu/discoverycard.png" alt="descoverycard" /></a></li>             
                         </ul>
                     </div>
                 </div>
@@ -621,4 +600,4 @@ function myFunction() {
 
            
      </body>
-     </html>
+  </html>

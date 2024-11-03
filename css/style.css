@@ -92,6 +92,18 @@ header.active{
   color: skyblue;
 }
 
+/* new */
+.navbar-toggler {
+  display: none; /* Hide on larger screens */
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+      display: block; /* Show on mobile */
+  }
+}
+/* new end */
+
 /* .navbar-nav{
   color: var(--primary-color);
   font-size: 13px;

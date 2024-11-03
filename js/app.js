@@ -126,95 +126,66 @@ getyear.textContent = getfullyear;
 
 });
 
-let suggestions = [
-  //ABC Normal Letters
-  "The Wild Robot",
-  "Dear Hyeri",
-  "Conjuring 1",
-  "Inside Out-2",
-  "Transformer One",
-  "No Gain No Love",
-  "Dashing Youth",
-  "Thelma",
-  "Dead Pool",
-  "How to Make Millions Before Grandma Dies",
-  "The Judge From Hell",
-  "Despicable me 4",
-  "Go East",
-  "Mission:Impossible FALLOUT",
-  "London Has Fallen",
-  "The Nun 2",
-  "Annabelle",
-  "Wish",
-  "Lovely Runner",
-  "Love Next Door"
-]
 
-// getting all required elements
-const searchWrapper = document.querySelector( ".search-input" );
-const inputBox = searchWrapper.querySelector( "input" );
-const suggBox = searchWrapper.querySelector(".autocom-box" );
-const icon = searchWrapper.querySelector(".icon");
-let linkTag = searchWrapper.querySelector( "filter" );
-let webLink;
+function searchPage() {
+  const input = document.getElementById('search').value;
+  const pages = {
+      "animation": "./project/animation.html",
+      "my oni girl": "./project/MyOniGirl.html",
+      "kung fu panda 4": "./project/KungFuPanda.html",
+      "the wild robot": "./project/ThewildRobot.html",
+      "inside out 2": "./project/insideout2.html",
+      "annabelle": "./project/Annabelle.html",
+      "deadpool": "./project/deadpool.html",
+      "go east": "./project/goeast.html",
+      "are you the one": "./project/areyoutheone.html",
+      "the old guard": "./project/Theoldguard.html",
+      "the judge from hell": "./project/TheJudgefromHell.html",
+      "badl and hunters": "./project/BadlandHunters.html",
+      "Elemental": "./project/elemental.html",
+      "hidden blade": "./project/hiddenblade.html",
+      "dashing youth": "./project/dashingyouth.html",
+      "no gain no love": "./project/NogainNolove.html",
+      "one and only": "./project/oneandonly.html",
+      "my oni girl": "./project/MyOniGirl.html",
+  };
 
-// if user press any key and release
-inputBox.onkeyup = (e) => {
-  let userData = e.target.value; //user enetered data
-  let emptyArray = [];
-  
-  if(userData) {
-      icon.onclick = () => {
-          webLink = "https://flix-vibe.onrender.com/"+ userData+"&oq="+ userData
-          linkTag.setAttribute( "href", webLink) ;
-          console.log(webLink);
-          linkTag.click( );
-      }
-      emptyArray = suggestions.filter((data) => {
-
-          // Filtering array value and user characters to lowercase and return on ly those words which are start with user enetered chars
-          return data.toLocaleLowerCase().includes(userData.toLocaleLowerCase());
-      });
-
-      emptyArray = emptyArray.map((data) => {
-          // passing return data inside li tag
-          return data = '<li>'+ data +'</li>';
-      });
-
-      searchWrapper.classList.add("active"); //show autocomplete box
-
-      showSuggestions(emptyArray);
-
-      let allList = suggBox.querySelectorAll("li");
-
-      for (let i = 0; i < allList.length; i++) {
-          //adding onclick attribute in all li tag
-          allList[i].setAttribute( "onclick", "select(this) ");
-      }
-  } else {
-      searchWrapper.classList.remove( "active"); //hide autocomplete box
-  }
+  const page = pages[input.toLowerCase()];
+    if (page) {
+        window.location.href = page; // Redirects to the selected page
+    } else {
+        alert("Page not found");
+    }
 }
 
-function select(element, event ){
-  let selectData = element.textContent;
-  inputBox.value = selectData;
-  icon.onclick = ()=>{
-    window.location.href = 'index.html'
-      webLink = "https://flix-vibe.onrender.com/"+ selectData+"&oq="+ selectData
-      linkTag.setAttribute ( "href", webLink);
-      linkTag.click( );
-  }
-  searchWrapper.classList.remove( "active");
-}
 
-function showSuggestions ( list ) {
-  let listData;
-  if(!list.length ){
-      userValue = inputBox.value;
-      listData = '<li>'+ userValue +'</li>';
-  }else{
-      listData = list.join('');
-  }
-  suggBox.innerHTML= listData;
+function searchPages() {
+  const input = document.getElementById('search').value;
+  const pages = {
+      "animation": "./animation.html",
+      "my oni girl": "./MyOniGirl.html",
+      "kung fu panda 4": "./KungFuPanda.html",
+      "the wild robot": "./ThewildRobot.html",
+      "inside out 2": "./insideout2.html",
+      "annabelle": "./Annabelle.html",
+      "deadpool": "./deadpool.html",
+      "go east": "./goeast.html",
+      "are you the one": "./areyoutheone.html",
+      "the old guard": "./Theoldguard.html",
+      "the judge from hell": "./TheJudgefromHell.html",
+      "badl and hunters": "./BadlandHunters.html",
+      "Elemental": "./elemental.html",
+      "hidden blade": "./hiddenblade.html",
+      "dashing youth": "./dashingyouth.html",
+      "no gain no love": "./NogainNolove.html",
+      "one and only": "./oneandonly.html",
+      "my oni girl": "./MyOniGirl.html",
+  };
+
+  const page = pages[input.toLowerCase()];
+    if (page) {
+        window.location.href = page; // Redirects to the selected page
+    } else {
+        alert("Page not found");
+    }
 }

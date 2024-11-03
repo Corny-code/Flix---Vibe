@@ -93,6 +93,28 @@ h1 {
   background-color: #666;
   color: white;
 }
+
+.content img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.column {
+    float: left;
+    width: 100%; /* Full width by default */
+}
+
+@media (min-width: 768px) {
+    .column {
+        width: 25%; /* Four columns on larger screens */
+    }
+}
+
+.content img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
 </style>
 </head>
 <body class="subscribes">
@@ -111,28 +133,28 @@ h1 {
       </button>
 
       <div id="nav" class="navbar-collapse collapse justify-content-end text-uppercase fw-bold">
-         <ul class="navbar-nav">
-            <li class="nav-item"><a href="../index.html" class="nav-link mx-2 menuitems menulists" data-filter="home">Home</a></li>
-            <li class="nav-item"><a href="./project/aboutus.html" class="nav-link mx-2 menuitems menulists" data-filter="aboutus" >About Us</a></li>
-            <li class="nav-item dropdown"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists dropdown-toggle" data-filter="movies" data-bs-toggle="dropdown">Gendres</a>
-                <ul class="dropdown-menu">
-                    <li><a href="./project/action.html" class="dropdown-item" data-filter="action">Action</a></li>
-                    <li><a href="./project/horror.html" class="dropdown-item" data-filter="horror">Horror</a></li>
-                    <li><a href="javascript:void(0);" class="dropdown-item" data-filter="romantic">Romantic</a></li>
-                    <li><a href="./project/drama.html" class="dropdown-item" data-filter="drama">Drama</a></li>
-                    <li><a href="javascript:void(0);" class="dropdown-item" data-filter="funny">Comedy</a></li>
-                    <li><a href="./project/animation.html" class="dropdown-item" data-filter="animation">Animation</a></li>
-                </ul>
-            </li>
-            <li class="nav-item"><a href="./project/trendings.html" class="nav-link mx-2 menuitems menulists" data-filter="toprated">Trendings</a></li>
-         </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="../index.html" class="nav-link mx-2 menuitems menulists" data-filter="home">Home</a></li>
+          <li class="nav-item"><a href="./aboutus.html" class="nav-link mx-2 menuitems menulists" data-filter="aboutus" >About Us</a></li>
+          <li class="nav-item dropdown"><a href="javascript:void(0);" class="nav-link mx-2 menuitems menulists dropdown-toggle" data-filter="movies" data-bs-toggle="dropdown">Gendres</a>
+              <ul class="dropdown-menu">
+                <li><a href="./action.html" class="dropdown-item" data-filter="action">Action</a></li>
+                <li><a href="./horror.html" class="dropdown-item" data-filter="horror">Horror</a></li>
+                <li><a href="./animation.html" class="dropdown-item" data-filter="animation">Animation</a></li>
+                <li><a href="./drama.html" class="dropdown-item" data-filter="drama">Drama(Korea)</a></li>
+                <li><a href="./drama1.html" class="dropdown-item" data-filter="funny">Drama(Thailand)</a></li>
+                <li><a href="./chinese.html" class="dropdown-item" data-filter="animation">Series(Chinese)</a></li>
+              </ul>
+          </li>
+          <li class="nav-item"><a href="./trendings.html" class="nav-link mx-2 menuitems menulists" data-filter="toprated">Trendings</a></li>
+       </ul>
       </div>
       <div class="wrapper">
         <div class="search-input">
-            <filter href="" target="_serf" hidden></filter>
+            <filter href="" target="_self" hidden></filter>
             <input type="text" id="search" placeholder="Search...">
             <div class="autocom-box"></div>
-            <div class="icon"><i class=" fas fa-search"></i></div>
+            <div class="icon" onclick="searchPages()"><i class=" fas fa-search"></i></div>
         </div>
       </div>  
       <div class="toggle">
@@ -159,14 +181,14 @@ h1 {
 <div class="row">
   <div class="column movies">
     <div class="content">
-      <img src="../assets/img/shinnobu/anni8.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <img src="../assets/img/shinnobu/anni8.jpg" alt="thewildrobot" style="height: 450px;">
       <h4>The Wild Robot</h4>
       <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/ThewildRobot.html" style="text-decoration: none;">Watch</a></button>
     </div>
   </div>
   <div class="column series">
     <div class="content">
-    <img src="../assets/img/ella/romseries1.jpg" alt="Lights" style="width:320px; height: 450px;">
+    <img src="../assets/img/ella/romseries1.jpg" alt="Lights" style=" height: 450px;">
       <h4>No Gain No Love</h4>
       <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/NogainNolove.html" style="text-decoration: none;">Watch</a></button>
     </div>
@@ -174,54 +196,54 @@ h1 {
 
   <div class="column movies">
     <div class="content">
-      <img src="../assets/img/shinnobu/anni2.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <img src="../assets/img/shinnobu/anni2.jpg" alt="Mountains" style=" height: 450px;">
       <h4>Transformer One</h4>
-      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/ThewildRobot.html" style="text-decoration: none;">Watch</a></button>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/Transformersone.html" style="text-decoration: none;">Watch</a></button>
     </div>
   </div>
   
   <div class="column series">
     <div class="content">
-    <img src="../assets/img/ella/fbccv.jfif" alt="Lights" style="width:320px; height: 450px;">
+    <img src="../assets/img/ella/fbccv.jfif" alt="Lights" style=" height: 450px;">
       <h4>Family By Choice</h4>
-      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/NogainNolove.html" style="text-decoration: none;">Watch</a></button>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/FamilybyChoice.html" style="text-decoration: none;">Watch</a></button>
     </div>
   </div>
 
   <div class="column movies">
     <div class="content">
-      <img src="../assets/img/tom/thenun2cv.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <img src="../assets/img/tom/thenun2cv.jpg" alt="Mountains" style=" height: 450px;">
       <h4>The Nun-2</h4>
-      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/ThewildRobot.html" style="text-decoration: none;">Watch</a></button>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/TheNun2.html" style="text-decoration: none;">Watch</a></button>
     </div>
   </div>
 
   <div class="column series">
     <div class="content">
-    <img src="../assets/img/Strawberry/goeastcv.jpg" alt="Lights" style="width:320px; height: 450px;">
+    <img src="../assets/img/Strawberry/goeastcv.jpg" alt="Lights" style=" height: 450px;">
       <h4>Go East</h4>
-      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/NogainNolove.html" style="text-decoration: none;">Watch</a></button>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/goeast.html" style="text-decoration: none;">Watch</a></button>
     </div>
   </div>
 
   <div class="column movies">
     <div class="content">
-      <img src="../assets/img/shinnobu/anni7.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <img src="../assets/img/shinnobu/anni7.jpg" alt="Mountains" style=" height: 450px;">
       <h4>Ultraman: Rising</h4>
-      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/ThewildRobot.html" style="text-decoration: none;">Watch</a></button>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/Ultranman.html" style="text-decoration: none;">Watch</a></button>
     </div>
   </div>
 
   <div class="column series">
     <div class="content">
-    <img src="../assets/img/ella/romseries1.jpg" alt="Lights" style="width:320px; height: 450px;">
-      <h4>No Gain No Love</h4>
-      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/NogainNolove.html" style="text-decoration: none;">Watch</a></button>
+    <img src="../assets/img/ella/judgecv.jpg" alt="Lights" style=" height: 450px;">
+      <h4>The Judge From Hell</h4>
+      <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/TheJudgefromHell.html" style="text-decoration: none;">Watch</a></button>
     </div>
   </div>
   <div class="column movies">
     <div class="content">
-      <img src="../assets/img/thomaswalker/extractioncv.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <img src="../assets/img/thomaswalker/extractioncv.jpg" alt="Mountains" style=" height: 450px;">
       <h4>Extraction</h4>
       <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/Extraction.html" style="text-decoration: none;">Watch</a></button>
     </div>
@@ -229,7 +251,7 @@ h1 {
 
   <div class="column series">
     <div class="content">
-    <img src="../assets/img/ella/lndcv.jpg" alt="Lights" style="width:320px; height: 450px;">
+    <img src="../assets/img/ella/lndcv.jpg" alt="Lights" style="height: 450px;">
       <h4>Love Next Door</h4>
       <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/lovenextdoor.html" style="text-decoration: none;">Watch</a></button>
     </div>
@@ -237,7 +259,7 @@ h1 {
 
   <div class="column movies">
     <div class="content">
-      <img src="../assets/img/shinnobu/thelmacv.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <img src="../assets/img/shinnobu/thelmacv.jpg" alt="Mountains" style=" height: 450px;">
       <h4>Thelma</h4>
       <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/Thelma.html" style="text-decoration: none;">Watch</a></button>
     </div>
@@ -245,7 +267,7 @@ h1 {
 
   <div class="column series">
     <div class="content">
-    <img src="../assets/img/ella/dslumpcover.jpg" alt="Lights" style="width:320px; height: 450px;">
+    <img src="../assets/img/ella/dslumpcover.jpg" alt="Lights" style=" height: 450px;">
       <h4>Doctor Slump</h4>
       <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/doctorslump.html" style="text-decoration: none;">Watch</a></button>
     </div>
@@ -253,7 +275,7 @@ h1 {
 
   <div class="column movies">
     <div class="content">
-      <img src="../assets/img/tom/horror6.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <img src="../assets/img/tom/horror6.jpg" alt="Mountains" style=" height: 450px;">
       <h4>Annabelle</h4>
       <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/Annabelle.html" style="text-decoration: none;">Watch</a></button>
     </div>
@@ -261,7 +283,7 @@ h1 {
 
   <div class="column series">
     <div class="content">
-    <img src="../assets/img/paing/23.5cv.jpg" alt="Lights" style="width:320px; height: 450px;">
+    <img src="../assets/img/paing/23.5cv.jpg" alt="Lights" style=" height: 450px;">
       <h4>23.5</h4>
       <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/thai23.5.html" style="text-decoration: none;">Watch</a></button>
     </div>
@@ -269,7 +291,7 @@ h1 {
 
   <div class="column movies">
     <div class="content">
-      <img src="../assets/img/shinnobu/elementalcv2.jpg" alt="Mountains" style="width:320px; height: 450px;">
+      <img src="../assets/img/shinnobu/elementalcv2.jpg" alt="Mountains" style="height: 450px;">
       <h4>Elemental</h4>
       <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/elemental.html" style="text-decoration: none;">Watch</a></button>
     </div>
@@ -277,7 +299,7 @@ h1 {
 
   <div class="column series">
     <div class="content">
-    <img src="../assets/img/ella/mrqueencv.jpg" alt="Lights" style="width:320px; height: 450px;">
+    <img src="../assets/img/ella/mrqueencv.jpg" alt="Lights" style="height: 450px;">
       <h4>Mr.Queen</h4>
       <button class="textbtn" style="background-color: #ffffff44; border-radius: 5px; padding: 0 5px 0 5px;"><a href="../project/Mrqueen.html" style="text-decoration: none;">Watch</a></button>
     </div>
@@ -343,9 +365,9 @@ for (var i = 0; i < btns.length; i++) {
           <div class="col-lg-3 col-sm-6">
               <h6 class="mb-3">Infomation</h6>
               <ul class="list-unstyled">
-                  <li><a href="javascript:void(0); " class="footerlinks">Home</a></li>
-                  <li><a href="javascript:void(0); " class="footerlinks">AboutUs</a></li>
-                  <li><a href="javascript:void(0); " class="footerlinks">Trendings</a></li>
+                  <li><a href="../index.html " class="footerlinks">Home</a></li>
+                  <li><a href="./aboutus.html " class="footerlinks">AboutUs</a></li>
+                  <li><a href="./trendings.html " class="footerlinks">Trendings</a></li>
                   <li><a href="javascript:void(0); " class="footerlinks">Movies</a></li>
                   <li><a href="javascript:void(0); " class="footerlinks">Series</a></li>
                   <li><a href="javascript:void(0); " class="footerlinks">Top Rated</a></li>
