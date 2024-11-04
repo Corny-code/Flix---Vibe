@@ -130,24 +130,52 @@ getyear.textContent = getfullyear;
 function searchPage() {
   const input = document.getElementById('search').value;
   const pages = {
-      "animation": "./project/animation.html",
+      "animation": "./project/animation.html", //animation start
+      "elemental": "./project/elemental.html",
       "my oni girl": "./project/MyOniGirl.html",
       "kung fu panda 4": "./project/KungFuPanda.html",
       "the wild robot": "./project/ThewildRobot.html",
       "inside out 2": "./project/insideout2.html",
+      "wish": "./project/Wish.html",
+      "transformers one": "./project/Transformersone.html",
+      "horror": "./project/horror.html", //horror start
       "annabelle": "./project/Annabelle.html",
+      "the nun": "./project/TheNun1.html",
+      "the nun 2": "./project/TheNun2.html",
+      "the witch": "./project/TheWitch.html",
+      "the conjuring 1": "./project/TheConjuring1.html",
+      "the conjuring 2": "./project/TheConjuring2.html",
+      "hereditary": "./project/Hereditary.html",
+      "action": "./project/action.html", //action start
+      "badl and hunters": "./project/BadlandHunters.html",
       "deadpool": "./project/deadpool.html",
+      "london has fallen": "./project/LondonHasFallen.html",
+      "war": "./project/War.html",
+      "vanguard": "./project/Vanguard.html",
+      "triple frontier": "./project/TripleFrontier.html",
+      "extraction": "./project/Extraction.html",
+      "chinese": "./project/chinese.html", //chinese start
+      "Go East": "./project/goeast.html",
+      "one and only": "./project/oneandonly.html",
+      "hidden blade": "./project/hiddenblade.html",
+      "dashing youth": "./project/dashingyouth.html",
       "go east": "./project/goeast.html",
       "are you the one": "./project/areyoutheone.html",
       "the old guard": "./project/Theoldguard.html",
-      "the judge from hell": "./project/TheJudgefromHell.html",
-      "badl and hunters": "./project/BadlandHunters.html",
-      "Elemental": "./project/elemental.html",
-      "hidden blade": "./project/hiddenblade.html",
-      "dashing youth": "./project/dashingyouth.html",
+      "korean": "./project/drama.html", // k drama start
       "no gain no love": "./project/NogainNolove.html",
-      "one and only": "./project/oneandonly.html",
-      "my oni girl": "./project/MyOniGirl.html",
+      "queen of tears": "./project/queenoftears.html",
+      "our beloved summer": "./project/ourbrlovedsummer.html",
+      "love next door": "./project/lovenextdoor.html",
+      "the judge from hell": "./project/TheJudgefromHell.html",
+      "thailand": "./project/drama1.html", // Thai start
+      "loneliness society": "./project/lonelinesssociety.html",
+      "you touch my heart": "./project/youtouchmyheart.html",
+      "rak rai": "./project/rakrai.html",
+      "23.5": "./project/thai23.5.html",
+      "beauty newbei": "./project/beautynewbei.html",
+      "royal doctor": "./project/royaldoctor.html",
+      "how to make millions before grandma dies": "./project/howtomakemillion.html",
   };
 
   const page = pages[input.toLowerCase()];
@@ -162,24 +190,52 @@ function searchPage() {
 function searchPages() {
   const input = document.getElementById('search').value;
   const pages = {
-      "animation": "./animation.html",
+      "animation": "./animation.html", //animation start
+      "elemental": "./elemental.html",
       "my oni girl": "./MyOniGirl.html",
       "kung fu panda 4": "./KungFuPanda.html",
       "the wild robot": "./ThewildRobot.html",
       "inside out 2": "./insideout2.html",
+      "wish": "./Wish.html",
+      "transformers one": "./Transformersone.html",
+      "horror": "./horror.html", //horror start
       "annabelle": "./Annabelle.html",
+      "the nun": "./TheNun1.html",
+      "the nun 2": "./TheNun2.html",
+      "the witch": "./TheWitch.html",
+      "the conjuring 1": "./TheConjuring1.html",
+      "the conjuring 2": "./TheConjuring2.html",
+      "hereditary": "./Hereditary.html",
+      "action": "./action.html", //action start
+      "badl and hunters": "./BadlandHunters.html",
       "deadpool": "./deadpool.html",
+      "london has fallen": "./LondonHasFallen.html",
+      "war": "./War.html",
+      "vanguard": "./Vanguard.html",
+      "triple frontier": "./TripleFrontier.html",
+      "extraction": "./Extraction.html",
+      "chinese": "./chinese.html", //chinese start
+      "Go East": "./goeast.html",
+      "one and only": "./oneandonly.html",
+      "hidden blade": "./hiddenblade.html",
+      "dashing youth": "./dashingyouth.html",
       "go east": "./goeast.html",
       "are you the one": "./areyoutheone.html",
       "the old guard": "./Theoldguard.html",
-      "the judge from hell": "./TheJudgefromHell.html",
-      "badl and hunters": "./BadlandHunters.html",
-      "Elemental": "./elemental.html",
-      "hidden blade": "./hiddenblade.html",
-      "dashing youth": "./dashingyouth.html",
+      "korean": "./drama.html", // k drama start
       "no gain no love": "./NogainNolove.html",
-      "one and only": "./oneandonly.html",
-      "my oni girl": "./MyOniGirl.html",
+      "queen of tears": "./queenoftears.html",
+      "our beloved summer": "./ourbrlovedsummer.html",
+      "love next door": "./lovenextdoor.html",
+      "the judge from hell": "./TheJudgefromHell.html",
+      "thailand": "./drama1.html", // Thai start
+      "loneliness society": "./lonelinesssociety.html",
+      "you touch my heart": "./youtouchmyheart.html",
+      "rak rai": "./rakrai.html",
+      "23.5": "./thai23.5.html",
+      "beauty newbei": "./beautynewbei.html",
+      "royal doctor": "./royaldoctor.html",
+      "how to make millions before grandma dies": "./howtomakemillion.html",
   };
 
   const page = pages[input.toLowerCase()];
