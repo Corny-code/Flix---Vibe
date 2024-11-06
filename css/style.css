@@ -419,7 +419,7 @@ header.active{
     bottom: 200px;
     left: 0;
     color: rgb(3, 3, 3);
-    opacity: .5;
+    opacity: 0.7;
     cursor: pointer;
   }
   .rightarrow{
@@ -428,7 +428,7 @@ header.active{
     bottom: 200px;
     right: 0;
     color: rgb(4, 4, 4);
-    opacity: .5;
+    opacity: 0.7;
     cursor: pointer;
   }
 /*Start Movie Title*/

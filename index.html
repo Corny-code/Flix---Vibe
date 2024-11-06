@@ -138,6 +138,7 @@ aside{
 
 .carouselbutton span:hover{
   color: navy;
+  opacity: 0.8;
 }
 
 .carouselbutton span::before{
@@ -183,6 +184,44 @@ aside{
 
 .iiteem:hover .texting{
   opacity: 1;
+}
+
+/* For small screens like mobile devices */
+@media (max-width: 600px) {
+  
+  .carousel1 .iiteem:nth-child(1),
+  .carousel1 .iiteem:nth-child(2),
+  .carousel1 .iiteem:nth-child(3),
+  .carousel1 .iiteem:nth-child(4),
+  .carousel1 .iiteem:nth-child(5),
+  .carousel1 .iiteem:nth-child(6),
+  .carousel1 .iiteem:nth-child(7) {
+    transform: translate3d(0, 0, 0) scale(0.8);  /* Scale down for small screens */
+  }
+
+  .carouselbutton span {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* For medium screens like tablets */
+@media (max-width: 1024px) {
+  
+  .carousel1 .iiteem:nth-child(1),
+  .carousel1 .iiteem:nth-child(2),
+  .carousel1 .iiteem:nth-child(3),
+  .carousel1 .iiteem:nth-child(4),
+  .carousel1 .iiteem:nth-child(5),
+  .carousel1 .iiteem:nth-child(6),
+  .carousel1 .iiteem:nth-child(7) {
+    transform: translate3d(0, 0, 0) scale(0.9);  /* Slightly larger scale for tablets */
+  }
+
+  .carouselbutton span {
+    width: 45px;
+    height: 45px;
+  }
 }
     </style>
 
@@ -303,8 +342,8 @@ aside{
             </div>
           </div>
           <div class="carouselbutton">
-            <span class="prev" onclick="plusSlides(-1)"></span>
-            <span class="next" onclick="plusSlides(1)"></span>
+            <span class="prev" aria-label="Previous slide onclick="plusSlides(-1)"></span>
+            <span class="next" aria-label="Next slide" onclick="plusSlides(1)"></span>
           </div>
           <script>
             let prev = document.querySelector('.prev');
@@ -536,6 +575,6 @@ aside{
            <script src="./assets/libs/lightbox2-2.11.4/dist/js/lightbox.min.js" type="text/javascript"></script>
          <!--custom js--->
            <script src="./js/app.js" type="text/javascript"></script>
-           <script src="https://kit.fontawsome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+           
      </body>
  </html>
