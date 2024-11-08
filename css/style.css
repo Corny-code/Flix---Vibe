@@ -308,7 +308,7 @@ header.active{
 
 .bannerheaders{
   animation-name: bnanis;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 
   font-size: 65px;
 }
@@ -325,7 +325,7 @@ header.active{
 }
 .bannerparagraphs{
   animation-name: bnanis;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-delay: 0.5s;
 
   animation-fill-mode: backwards;
