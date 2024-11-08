@@ -41,6 +41,7 @@
             justify-content: right;
             font-size: 30px;
             font-family: "Grand Hotel", cursive;
+            margin-bottom: 20px;
         }
         .darksoul-card2
         {
@@ -56,6 +57,7 @@
             justify-content: center;
             font-size: 30px;
             font-family: 'Kaushan Script', sans-serif;
+            margin-bottom: 20px;
         }
         .darksoul-card3
         {
@@ -71,6 +73,7 @@
             justify-content: left;
             font-size: 30px;
             font-family: "Kaushan Script", cursive;
+            margin-bottom: 20px;
         }
         .circle1
         {
@@ -150,11 +153,20 @@
             color: black;
             font-weight: 500;
         }
+
+        .cardsection{
+            display: flex;
+        }
+        
         @media only screen and (max-width: 600px) 
         {
             body
             {
                 flex-direction: column;
+            }
+
+            .cardsection{
+                display: block;
             }
         }
         .darksoul-card1 img
@@ -217,8 +229,8 @@
              <!---Start Nav Bar-->
               <nav class="navbar navbar-expand-md fixed-top" style="height: 100px";>
                 <a href="index.html" class="navbar-brand text-light mx-3">
-                   <img src="../assets/img/shinnobu/logo2-removebg-preview.png" width="100px" alt="favicon" style="border-radius: 50%; margin-bottom: 10px;"/>
-                   <span class="text-uppercase h3 fw-bold mx-4" style="font-family: 'Times New Roman', Times, serif; font-size: 50px;">Flix<span class="h3" style="font-family: 'Times New Roman', Times, serif; font-size: 50px;"> Vibe</span></span>
+                    <img src="../assets/img/shinnobu/logo2-removebg-preview.png"  class="brand-logo" width="100px" alt="favicon" style="border-radius: 50%; margin-bottom: 10px;"/>
+                    <span class="brand-text text-uppercase h3 fw-bold mx-4" style="font-family: 'Times New Roman', Times, serif; ">Flix<span class="brand-text h3" style="font-family: 'Times New Roman', Times, serif; "> Vibe</span></span>
                 </a>
 
                 <button type="button" class="navbar-toggler navbuttons " data-bs-toggle="collapse" data-bs-target="#nav">
@@ -273,9 +285,9 @@
          <div class="subscribes">
             <div class="greeting">
                 <h1 class="display-4 bannerheaders auto" style=" text-align: center; font-size: 45px;"><b>Flix Vibe</b> Movie Website is made by "Let's Fight Together Team.<br>We hope you to enjoy your free time with watching movies from our "Flix Vibe" movies website.</h1><br><hr>
-            </div><br><br>
+            </div><br><br><br>
 
-            <div class="cardsection" style="display: flex;">
+            <div class="cardsection" >
                 <a href="../project/ourmission.html" target="_self">
                     <div class="darksoul-card1">
                         <div class="circle1"></div>
