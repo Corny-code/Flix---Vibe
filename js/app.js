@@ -164,6 +164,7 @@ function searchPage() {
       "the old guard": "./project/Theoldguard.html",
       "korean": "./project/drama.html", // k drama start
       "no gain no love": "./project/NogainNolove.html",
+      "lovely runner": "./project/lovelyrunner.html",
       "queen of tears": "./project/queenoftears.html",
       "our beloved summer": "./project/ourbrlovedsummer.html",
       "love next door": "./project/lovenextdoor.html",
@@ -224,6 +225,7 @@ function searchPages() {
       "the old guard": "./Theoldguard.html",
       "korean": "./drama.html", // k drama start
       "no gain no love": "./NogainNolove.html",
+      "lovely runner": "./lovelyrunner.html",
       "queen of tears": "./queenoftears.html",
       "our beloved summer": "./ourbrlovedsummer.html",
       "love next door": "./lovenextdoor.html",
