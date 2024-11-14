@@ -375,8 +375,58 @@ function myFunction() {
 </section>
 
 <section class="movielink">
-  <p style="font-size: 35px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Watch Here </b> &#x226B </p>
-</section><hr>
+  
+    <p style="font-size: 35px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Watch here</b> <span id="dotss"></span><button onclick="myFunction()" id="myBtnn" style="font-size: 15px;">&#x226B</button><br><span id="moree" style="display: none; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><br>
+      <a href="https://t.me/Moviesk018/5">Episode-1</a>
+      <a href="https://t.me/Moviesk018/6">Episode-2</a>
+      <a href="https://t.me/Moviesk018/7">Episode-3</a>
+      <a href="https://t.me/Moviesk018/8">Episode-4</a>
+      <a href="https://t.me/Moviesk018/9">Episode-5</a>
+      <a href="https://t.me/Moviesk018/10">Episode-6</a>
+      <a href="https://t.me/Moviesk018/11">Episode-7</a> 
+      <a href="https://t.me/Moviesk018/12">Episode-8</a>  
+      <a href="https://t.me/Moviesk018/13">Episode-9</a> 
+      <a href="https://t.me/Moviesk018/14">Episode-10</a> 
+      <a href="https://t.me/Moviesk018/15">Episode-11</a> 
+      <a href="https://t.me/Moviesk018/16">Episode-12</a> 
+      <a href="https://t.me/Moviesk018/17">Episode-13</a> 
+      <a href="https://t.me/Moviesk018/18">Episode-14</a>
+      <a href="https://t.me/Moviesk018/19">Episode-15</a> 
+      <a href="https://t.me/Moviesk018/22">Episode-16</a>   
+      </span></p>
+  
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+          var dotss = document.getElementById("dotss");
+          var moreTextt = document.getElementById("moree");
+          var btnTextt = document.getElementById("myBtnn");
+  
+          if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "More..."; 
+          moreText.style.display = "none";
+          } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Less"; 
+          moreText.style.display = "inline";
+          }
+        
+          if (dotss.style.display === "none") {
+            dotss.style.display = "inline";
+            btnTextt.innerHTML = "More"; 
+            moreTextt.style.display = "none";
+          } else {
+            dotss.style.display = "none";
+            btnTextt.innerHTML = "Less"; 
+            moreTextt.style.display = "inline";
+          }
+        }
+        </script>
+  
+  </section><hr>
 
 <section>
   <h3 style="font-size: 35px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">More like this</h3><br>
