@@ -169,6 +169,9 @@ function searchPage() {
       "our beloved summer": "./project/ourbrlovedsummer.html",
       "love next door": "./project/lovenextdoor.html",
       "the judge from hell": "./project/TheJudgefromHell.html",
+      "twenty five twenty one": "./project/twentyfivetwentyone.html",
+      "twinkling watermelon": "./project/twinklingwatermelon.html",
+      "doctor slump": "./project/doctorslump.html",
       "thailand": "./project/drama1.html", // Thai start
       "loneliness society": "./project/lonelinesssociety.html",
       "you touch my heart": "./project/youtouchmyheart.html",
@@ -230,6 +233,9 @@ function searchPages() {
       "our beloved summer": "./ourbrlovedsummer.html",
       "love next door": "./lovenextdoor.html",
       "the judge from hell": "./TheJudgefromHell.html",
+      "twenty five twenty one": "./twentyfivetwentyone.html",
+      "twinkling watermelon": "./twinklingwatermelon.html",
+      "doctor slump": "./doctorslump.html",
       "thailand": "./drama1.html", // Thai start
       "loneliness society": "./lonelinesssociety.html",
       "you touch my heart": "./youtouchmyheart.html",
