@@ -138,6 +138,7 @@ function searchPage() {
       "inside out 2": "./project/insideout2.html",
       "wish": "./project/Wish.html",
       "transformers one": "./project/Transformersone.html",
+      "turning red": "./project/turningred.html",
       "horror": "./project/horror.html", //horror start
       "annabelle": "./project/Annabelle.html",
       "the nun": "./project/TheNun1.html",
@@ -146,6 +147,9 @@ function searchPage() {
       "the conjuring 1": "./project/TheConjuring1.html",
       "the conjuring 2": "./project/TheConjuring2.html",
       "hereditary": "./project/Hereditary.html",
+      "annabelle": "./project/Annabelle.html",
+      "annabelle comes home": "./project/AnnabelleComesHome.html",
+      "annabelle creation": "./project/AnnabelleCreation.html",
       "action": "./project/action.html", //action start
       "badl and hunters": "./project/BadlandHunters.html",
       "deadpool": "./project/deadpool.html",
@@ -154,6 +158,9 @@ function searchPage() {
       "vanguard": "./project/Vanguard.html",
       "triple frontier": "./project/TripleFrontier.html",
       "extraction": "./project/Extraction.html",
+      "mission impossible": "./project/MissionImpossible.html",
+      "triple threat": "./project/TripleThreat.html",
+      "pathaan": "./project/Pathaan.html",
       "chinese": "./project/chinese.html", //chinese start
       "Go East": "./project/goeast.html",
       "one and only": "./project/oneandonly.html",
@@ -162,6 +169,12 @@ function searchPage() {
       "go east": "./project/goeast.html",
       "are you the one": "./project/areyoutheone.html",
       "the old guard": "./project/Theoldguard.html",
+      "the untamed": "./project/theuntamed.html",
+      "the blood of youth": "./project/thebloodofyouth.html",
+      "the legends": "./project/thelegends.html",
+      "my sterious lotus casebook": "./project/mysteriouslotuscasebook.html",
+      "blossoms in adversity": "./project/blossomsinadversity.html",
+      "lost you forever": "./project/lostyouforever.html",
       "korean": "./project/drama.html", // k drama start
       "no gain no love": "./project/NogainNolove.html",
       "lovely runner": "./project/lovelyrunner.html",
@@ -172,6 +185,8 @@ function searchPage() {
       "twenty five twenty one": "./project/twentyfivetwentyone.html",
       "twinkling watermelon": "./project/twinklingwatermelon.html",
       "doctor slump": "./project/doctorslump.html",
+      "dear hyeri": "./project/DearHyeri.html",
+      "family by choice": "./project/FamilybyChoice.html",
       "thailand": "./project/drama1.html", // Thai start
       "loneliness society": "./project/lonelinesssociety.html",
       "you touch my heart": "./project/youtouchmyheart.html",
@@ -202,6 +217,7 @@ function searchPages() {
       "inside out 2": "./insideout2.html",
       "wish": "./Wish.html",
       "transformers one": "./Transformersone.html",
+      "turning red": "./turningred.html",
       "horror": "./horror.html", //horror start
       "annabelle": "./Annabelle.html",
       "the nun": "./TheNun1.html",
@@ -210,6 +226,9 @@ function searchPages() {
       "the conjuring 1": "./TheConjuring1.html",
       "the conjuring 2": "./TheConjuring2.html",
       "hereditary": "./Hereditary.html",
+      "annabelle": "./Annabelle.html",
+      "annabelle comes home": "./AnnabelleComesHome.html",
+      "annabelle creation": "./AnnabelleCreation.html",
       "action": "./action.html", //action start
       "badl and hunters": "./BadlandHunters.html",
       "deadpool": "./deadpool.html",
@@ -218,6 +237,9 @@ function searchPages() {
       "vanguard": "./Vanguard.html",
       "triple frontier": "./TripleFrontier.html",
       "extraction": "./Extraction.html",
+      "mission impossible": "./MissionImpossible.html",
+      "triple threat": "./TripleThreat.html",
+      "pathaan": "./Pathaan.html",
       "chinese": "./chinese.html", //chinese start
       "Go East": "./goeast.html",
       "one and only": "./oneandonly.html",
@@ -226,6 +248,12 @@ function searchPages() {
       "go east": "./goeast.html",
       "are you the one": "./areyoutheone.html",
       "the old guard": "./Theoldguard.html",
+      "the untamed": "./theuntamed.html",
+      "the blood of youth": "./thebloodofyouth.html",
+      "the legends": "./thelegends.html",
+      "my sterious lotus casebook": "./project/mysteriouslotuscasebook.html",
+      "blossoms in adversity": "./project/blossomsinadversity.html",
+      "lost you forever": "./project/lostyouforever.html",
       "korean": "./drama.html", // k drama start
       "no gain no love": "./NogainNolove.html",
       "lovely runner": "./lovelyrunner.html",
@@ -236,6 +264,8 @@ function searchPages() {
       "twenty five twenty one": "./twentyfivetwentyone.html",
       "twinkling watermelon": "./twinklingwatermelon.html",
       "doctor slump": "./doctorslump.html",
+      "dear hyeri": "./DearHyeri.html",
+      "family by choice": "./FamilybyChoice.html",
       "thailand": "./drama1.html", // Thai start
       "loneliness society": "./lonelinesssociety.html",
       "you touch my heart": "./youtouchmyheart.html",
