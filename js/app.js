@@ -187,6 +187,8 @@ function searchPage() {
       "doctor slump": "./project/doctorslump.html",
       "dear hyeri": "./project/DearHyeri.html",
       "family by choice": "./project/FamilybyChoice.html",
+      "moonlover": "./project/moonlover.html",
+      "the heirs": "./project/theheirs.html",
       "thailand": "./project/drama1.html", // Thai start
       "loneliness society": "./project/lonelinesssociety.html",
       "you touch my heart": "./project/youtouchmyheart.html",
@@ -266,6 +268,8 @@ function searchPages() {
       "doctor slump": "./doctorslump.html",
       "dear hyeri": "./DearHyeri.html",
       "family by choice": "./FamilybyChoice.html",
+      "moonlover": "./moonlover.html",
+      "the heirs": "./theheirs.html",
       "thailand": "./drama1.html", // Thai start
       "loneliness society": "./lonelinesssociety.html",
       "you touch my heart": "./youtouchmyheart.html",
