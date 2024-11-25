@@ -551,10 +551,10 @@ header.active{
 .subscribes.active{
   background-color: var(--secodary-color);
 }
-.subscribes .display-4{
+.subscribes .display-2{
   color: var(--primary-color);
 }
-.subscribes .display-4.active{
+.subscribes .display-2.active{
   color: white;
 }
 .input-group-text{
