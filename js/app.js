@@ -287,3 +287,67 @@ function searchPages() {
         alert("Page not found");
     }
 }
+
+// Start Search box letter
+$(function(){
+  const searchlist = [
+      "animation", //animation start
+      "elemental",
+      "my oni girl",
+      "kung fu panda 4",
+      "the wild robot",
+      "inside out 2",
+      "wish",
+      "transformers one",
+      "horror", //horror start
+      "annabelle",
+      "the nun",
+      "the nun 2",
+      "the witch",
+      "the conjuring 1",
+      "the conjuring 2",
+      "hereditary",
+      "action", //action start
+      "badl and hunters",
+      "deadpool",
+      "london has fallen",
+      "war",
+      "vanguard",
+      "triple frontier",
+      "extraction",
+      "chinese", //chinese start
+      "Go East",
+      "one and only",
+      "hidden blade",
+      "dashing youth",
+      "go east",
+      "are you the one",
+      "the old guard",
+      "korean", // k drama start
+      "no gain no love",
+      "queen of tears",
+      "our beloved summer",
+      "love next door",
+      "the judge from hell",
+      "twenty five twenty one",
+      "twinkling watermelon",
+      "doctor slump",
+      "thailand", // Thai start
+      "loneliness society",
+      "you touch my heart",
+      "rak rai",
+      "23.5",
+      "beauty newbei",
+      "royal doctor",
+      "how to make millions before grandma dies",
+
+  ];
+
+  $('#search').autocomplete({
+    source:searchlist
+    
+  });
+});
+// End Search box letter
+
+
