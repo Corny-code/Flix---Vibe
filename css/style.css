@@ -134,6 +134,9 @@ header.active{
 }
 .menuitems.active{
   color: white;
+  background-color: rgba(255, 255, 255, 0.466);
+  border-radius: 10px;
+  padding-left: 13px;
 }
 .menuitems.active:hover{
   color: skyblue;
